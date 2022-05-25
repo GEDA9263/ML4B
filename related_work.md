@@ -26,14 +26,14 @@ https://www.researchgate.net/publication/347959945_The_Traffic_Scene_Understandi
 - Ambulance vehicles
 - Vehicle
 
-# Data cleansing
+## Data cleansing
 - Emergency Vehicles
 - Non emergency Vehicles
 - Pictures of traffic
 - Only english captions
 - Deleting captions that are not meaningful
 
-# Data that is excluded
+## Data that is excluded
 For example:
 - Animals
 - People
