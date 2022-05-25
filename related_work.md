@@ -19,3 +19,23 @@ https://link.springer.com/content/pdf/10.1007/978-3-030-89701-7_2.pdf
 https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8679295
 https://paperswithcode.com/task/image-captioning
 https://www.researchgate.net/publication/347959945_The_Traffic_Scene_Understanding_and_Prediction_Based_on_Image_Captioning/fulltext/5feecaaca6fdccdcb81eb998/The-Traffic-Scene-Understanding-and-Prediction-Based-on-Image-Captioning.pdf?origin=publication_detail
+
+## Search string
+- Emergency vehicles
+- Traffic
+- Ambulance vehicles
+- Vehicle
+
+# Data cleansing
+- Emergency Vehicles
+- Non emergency Vehicles
+- Pictures of traffic
+- Only english captions
+- Deleting captions that are not meaningful
+
+# Data that is excluded
+For example:
+- Animals
+- People
+- Houses
+etc...
