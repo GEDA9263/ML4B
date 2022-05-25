@@ -20,12 +20,6 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8679295
 https://paperswithcode.com/task/image-captioning
 https://www.researchgate.net/publication/347959945_The_Traffic_Scene_Understanding_and_Prediction_Based_on_Image_Captioning/fulltext/5feecaaca6fdccdcb81eb998/The-Traffic-Scene-Understanding-and-Prediction-Based-on-Image-Captioning.pdf?origin=publication_detail
 
-## Search string
-- Emergency vehicles
-- Traffic
-- Ambulance vehicles
-- Vehicle
-
 ## Data cleansing
 - Emergency Vehicles
 - Non emergency Vehicles
@@ -39,3 +33,9 @@ For example:
 - People
 - Houses
 etc...
+
+## Search string data cleansing
+- Emergency vehicles
+- Traffic
+- Ambulance vehicles
+- Vehicle
