@@ -5,7 +5,7 @@ from st_aggrid.shared import GridUpdateMode
 import requests
 import os.path
 
-st.bar_chart({"data": [1, 5, 2, 6, 2, 1]})
+st.write("see more")
 
 with st.expander("See explanation"):
      st.write("""
