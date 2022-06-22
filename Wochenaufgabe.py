@@ -138,9 +138,9 @@ with st.expander("Evaluation"):
 
 st.image("brokencaption.jpg")
 
-st.subheader("22.06.22 Deployment - Feinschliff der Streamlit App")
+st.subheader("22.06.22 ")
 
-with st.expander("See more"):
+with st.expander("Deployment - Feinschliff der Streamlit App"):
      st.write("""Die letzten Tage vor der Abgabe haben wir nun gebraucht, um die Streamlit app aufzuhübschen.
      """)
 
