@@ -186,4 +186,6 @@ with col2:
          st.image("60epochen.jpg")
          
          
+with st.expander("Epochen"):
+          st.image("epochen.jpg")
 
