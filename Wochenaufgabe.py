@@ -135,7 +135,7 @@ with st.expander("See more"):
      
      st.write("""Zwischenzeitlich hatten wir noch mit einen paar Bugs zu kämpfen zum Beispiel wurden uns immer die maximale Anzahl an Wörter in der Caption ausgegeben, anstatt eine Sinnvolle Caption. So ist zum Beispiel dieser Wörtersalat entstanden:    
      """)
-with st.expander("Surfer"):
+
 st.image("brokencaption.jpg")
 
 st.subheader("22.06.22 Deployment - Feinschliff der Streamlit App")
