@@ -160,7 +160,6 @@ with col1:
     st.image("10epochen.jpg")
 
 with col2:
-          st.markdown(f'<h1 style="color:#454545;font-size:16px;">{"Epoche 20"}</h1>')
-                  st.image("20epochen.jpg")
+         st.image("20epochen.jpg")
          
 
