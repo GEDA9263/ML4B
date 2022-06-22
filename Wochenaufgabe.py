@@ -65,7 +65,7 @@ if len(selection["selected_rows"]) > 0:
     st.image('pictures/' + str(id) + '.jpg')
     st.write(selection["selected_rows"][0]["caption"])
 
-    st.text('')
+st.subheader("")
 
 st.subheader("03.05.22 Gruppenaufteilung / Erste Schritte")
 
