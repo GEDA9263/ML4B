@@ -66,8 +66,7 @@ if len(selection["selected_rows"]) > 0:
     st.write(selection["selected_rows"][0]["caption"])
 
 
-st.subheader("03.05.22")
-st.subheader("Gruppenaufteilung / Erste Schritte"
+st.subheader("03.05.22 Gruppenaufteilung / Erste Schritte")
 
 with st.expander("See more"):
      st.write("""
