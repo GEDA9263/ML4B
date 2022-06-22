@@ -76,14 +76,14 @@ st.subheader("03.05.22 Gruppenaufteilung / Erste Schritte")
 
 with st.expander("See more"):
      st.write("""
-        In der ersten Woche haben wir mit Streamlit eine kleine erste App gebaut und die Installation der Programme durchgeführt. Es gab kleinere Schwierigkeiten beim Einarbeiten da so viele neue Programme auf einmal da waren und wir uns erst einmal einen Überblick machen mussten, welche welches Programm für was da ist.
+        In der ersten Woche haben wir mit Streamlit eine kleine erste App gebaut und die Installation der erforderlichen Programme durchgeführt. Es gab kleinere Schwierigkeiten beim Einarbeiten, da viele neue Programme auf einmal benötigt wurden und wir uns zuerst einen Überblick machen mussten, welche welches Programm welche Funktion erfüllt.
      """)
 
 st.subheader("04.05.22 ersten zwei Phasen des CRISP-DM Data understanding")
 
 with st.expander("See more"):
      st.write("""
-        In der Zweiten Woche haben wir uns näher mit unserem Datensatz auseinandergesetzt, und uns genauer überlegt was wir eigentlich in diesem Projekt machen wollen. Zunächst haben wir hierfür Ideen gesammelt, und uns dann auf Emergency Vehicle geeinigt . Das Datenset ist zwar sehr groß, aber einfach zu filtern mit Hilfe eines Web Programms (hier einfügen) zudem liegt pro Bild bereits eine Bildunterschrift in verschiedenen sprachen vor. Als erstes haben wir uns auf die Sprache Englisch festgelegt.
+        In der Zweiten Woche haben wir uns näher mit unserem Datensatz auseinandergesetzt und uns genauer überlegt, was wir mit unserem Projekt eigentlich machen wollen. Zunächst haben wir hierfür Ideen gesammelt und uns dann auf Emergency Vehicles geeinigt. Das Datenset ist zwar sehr groß, aber einfach zu filtern mit Hilfe eines Web Programms (hier einfügen), zudem liegt pro Bild bereits eine Bildunterschrift in verschiedenen Sprachen vor. Als erstes haben wir uns auf die Sprache Englisch festgelegt.
         """)
 
 
