@@ -66,6 +66,8 @@ if len(selection["selected_rows"]) > 0:
     st.write(selection["selected_rows"][0]["caption"])
 
 st.markdown("***")
+st.text("")
+st.text("")
 
 st.subheader("03.05.22 Gruppenaufteilung / Erste Schritte")
 
