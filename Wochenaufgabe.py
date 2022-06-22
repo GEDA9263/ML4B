@@ -136,6 +136,8 @@ with st.expander("See more"):
      st.write("""Zwischenzeitlich hatten wir noch mit einen paar Bugs zu kämpfen zum Beispiel wurden uns immer die maximale Anzahl an Wörter in der Caption ausgegeben, anstatt eine Sinnvolle Caption. So ist zum Beispiel dieser Wörtersalat entstanden:    
      """)
 
+st.image("epochen.jpg")
+
 
 
 
