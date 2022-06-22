@@ -74,9 +74,9 @@ st.text("")
 
 st.title("Chronologischer Ablauf")
 
-st.subheader("03.05.22 Gruppenaufteilung / Erste Schritte")
+st.subheader("03.05.22 ")
 
-with st.expander("See more"):
+with st.expander("Gruppenaufteilung / Erste Schritte"):
      st.write("""
         In der ersten Woche haben wir mit Streamlit eine kleine erste App gebaut und die Installation der erforderlichen Programme durchgeführt. Es gab kleinere Schwierigkeiten beim Einarbeiten, da viele neue Programme auf einmal benötigt wurden und wir uns zuerst einen Überblick machen mussten, welche welches Programm welche Funktion erfüllt.
      """)
@@ -186,6 +186,6 @@ with col2:
          st.image("60epochen.jpg")
          
          
-with st.expander("Epochen"):
+with st.expander("Epochen Loss Plot"):
           st.image("epochen.jpg")
 
