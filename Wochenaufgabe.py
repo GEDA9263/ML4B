@@ -74,7 +74,7 @@ st.text("")
 
 st.title("Chronologischer Ablauf")
 
-st.subheader("03.05.22 Gruppenaufteilung / Erste Schritte")
+st.subheader("03.05.22  Gruppenaufteilung / Erste Schritte")
 
 with st.expander("See more"):
      st.write("""
@@ -82,7 +82,7 @@ with st.expander("See more"):
      """)
 
 
-st.subheader("04.05.22 ersten zwei Phasen des CRISP-DM Data understanding")
+st.subheader("04.05.22   Ersten zwei Phasen des CRISP-DM Data understanding")
 
 with st.expander("See more"):
      st.write("""
@@ -90,7 +90,7 @@ with st.expander("See more"):
         """)
 
 
-st.subheader("11.05.22 Related Work")
+st.subheader("11.05.22    Related Work")
 
 with st.expander("See more"):
      st.write("""
