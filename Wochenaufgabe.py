@@ -136,13 +136,6 @@ with st.expander("See more"):
      st.write("""Zwischenzeitlich hatten wir noch mit einen paar Bugs zu kämpfen zum Beispiel wurden uns immer die maximale Anzahl an Wörter in der Caption ausgegeben, anstatt eine Sinnvolle Caption. So ist zum Beispiel dieser Wörtersalat entstanden:    
      """)
 
-st.text("")
-st.text("")
-st.markdown("***")
-st.text("")
-st.text("")
-
-
 
 st.subheader("22.06.22 Deployment - Feinschliff der Streamlit App")
 
@@ -151,4 +144,23 @@ with st.expander("See more"):
      """)
 
 
+st.text("")
+st.text("")
+st.markdown("***")
+st.text("")
+st.text("")
+
+st.title("Beispielbilder")
+
+
+with st.expander("Our Team:"):
+    col1, col2 = st.columns(2)
+with col1:
+         st.markdown(f'<h1 style="color:#454545;font-size:16px;">{"Epoche 10"}</h1>', unsafe_allow_html=True)
+    st.image("10epochen.jpeg")
+
+with col2:
+          st.markdown(f'<h1 style="color:#454545;font-size:16px;">{"Epoche 10"}</h1>', unsafe_allow_html=True)
+                  st.image("20epochen")
+         
 
