@@ -169,21 +169,21 @@ with st.expander("Epochen 30 und 40"):
     col1, col2 = st.columns(2)
 with col1:
         
-    st.image("10epochen.jpg")
+    st.image("30epochen.jpg")
 
 with col2:
-         st.image("20epochen.jpg")
+         st.image("40epochen.jpg")
          
          
          
-with st.expander("Epoche 50 und LossPlot"):
+with st.expander("Epoche 50 und Epoche 60"):
     col1, col2 = st.columns(2)
 with col1:
         
-    st.image("10epochen.jpg")
+    st.image("50epochen.jpg")
 
 with col2:
-         st.image("20epochen.jpg")
+         st.image("60epochen.jpg")
          
          
 
