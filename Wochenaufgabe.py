@@ -113,6 +113,11 @@ with st.expander("See more"):
          """)
 
 
+st.subheader("01.06.22 Modeling")
+
+with st.expander("See more"):
+     st.write("""Diese Woche haben wir dafür genutzt unseren Algorithmus zum Laufen zubringen. Zunächst hatten wir versucht mit den alten Datenset zuarbeiten. Was aufgrund des Datenformats nicht funktioniert hat. Zudem nutzen wir drei Modelle: Inception v3 tensorflow Manchine Learning und Text vectorasation Sowie ein Imagecaptioning Model. Hier ist viel Arbeit reingeflossen, um diese drei Modelle zusammen zum Laufen zu bringen.
+    """)
 
 
 
