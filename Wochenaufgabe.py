@@ -5,15 +5,6 @@ from st_aggrid.shared import GridUpdateMode
 import requests
 import os.path
 
-st.write("see more")
-
-with st.expander("See explanation"):
-     st.write("""
-         The chart above shows some numbers I picked for you.
-         I rolled actual dice for these, so they're *guaranteed* to
-         be random.
-     """)
-     st.image("https://static.streamlit.io/examples/dice.jpg")
 
 st.title('Projektpräsentation')
 st.subheader('Teamvorstellung')
@@ -75,6 +66,13 @@ if len(selection["selected_rows"]) > 0:
     st.write(selection["selected_rows"][0]["caption"])
 
 
+st.title("03.05.22 Gruppenaufteilung / Erste Schritte")
+
+with st.expander("See more"):
+     st.write("""
+        In der ersten Woche haben wir mit Streamlit eine kleine erste App gebaut und die Installation der Programme durchgeführt. Es gab kleinere Schwierigkeiten beim Einarbeiten da so viele neue Programme auf einmal da waren und wir uns erst einmal einen Überblick machen mussten, welche welches Programm für was da ist.
+     """)
+    
 
 
 
