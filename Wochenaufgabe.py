@@ -153,14 +153,14 @@ st.text("")
 st.title("Beispielbilder")
 
 
-with st.expander("Our Team:"):
+with st.expander("Epochen"):
     col1, col2 = st.columns(2)
 with col1:
-         st.markdown(f'<h1 style="color:#454545;font-size:16px;">{"Epoche 10"}</h1>', unsafe_allow_html=True)
+        
     st.image("10epochen.jpg")
 
 with col2:
-          st.markdown(f'<h1 style="color:#454545;font-size:16px;">{"Epoche 10"}</h1>', unsafe_allow_html=True)
+          st.markdown(f'<h1 style="color:#454545;font-size:16px;">{"Epoche 20"}</h1>')
                   st.image("20epochen.jpg")
          
 
