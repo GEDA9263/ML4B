@@ -82,54 +82,54 @@ with st.expander("Gruppenaufteilung / Erste Schritte"):
      """)
 
 
-st.subheader("04.05.22 Ersten zwei Phasen des CRISP-DM Data understanding")
+st.subheader("04.05.22 ")
 
-with st.expander("See more"):
+with st.expander("Ersten zwei Phasen des CRISP-DM Data understanding"):
      st.write("""
         In der Zweiten Woche haben wir uns näher mit unserem Datensatz auseinandergesetzt und uns genauer überlegt, was wir mit unserem Projekt eigentlich machen wollen. Zunächst haben wir hierfür Ideen gesammelt und uns dann auf Emergency Vehicles geeinigt. Das Datenset ist zwar sehr groß, aber einfach zu filtern mit Hilfe eines Web Programms (hier einfügen), zudem liegt pro Bild bereits eine Bildunterschrift in verschiedenen Sprachen vor. Als erstes haben wir uns auf die Sprache Englisch festgelegt.
         """)
 
 
-st.subheader("11.05.22 Related Work")
+st.subheader("11.05.22 ")
 
-with st.expander("See more"):
+with st.expander("Related Work"):
      st.write("""
         In dieser Woche haben wir begonnen zu recherchieren. Zunächst hat jeder für sich mit verschiedenen Suchmaschinen recherchiert. Wir haben uns generell  über Machine Learning im Image Captioning Bereich eingelesen, um gezielt nach Emergency Vehicle Erkennungen zu suchen. Tatsächlich waren auch einige relevante Paper dabei, teilweise sogar mit Code.
         """)
 
 
-st.subheader("18.05.22 Datapreperation")
+st.subheader("18.05.22 ")
 
-with st.expander("See more"):
+with st.expander("Datapreperation"):
      st.write("""
         Zunächst haben wir den Datensatz eingeschränkt. Mit den Suchbegriffen „vehicle“, „emergency vehicle“ und „traffic“ etc. Schnell haben wir gemerkt, dass der Datensatz für unser Thema zu klein ist, um einen Algorithmus sinnvoll zu trainieren. Außerdem hatten wir Schwierigkeiten sinnvolle Bilder zu finden, da beispielsweise viele Spielzeugautos mit in unserem Datensatz waren.
         """)
 
 
-st.subheader("25.05.22 Austausch und aktueller Stand")
+st.subheader("25.05.22 ")
 
-with st.expander("See more"):
+with st.expander("Austausch und aktueller Stand"):
      st.write("""Nachdem wir unseren aktuellen Stand der Recherche präsentiert haben, haben wir als Feedback bekommen uns nicht ganz so zu beschränken und noch einmal einen Schritt zurück zu gehen. Daraufhin haben wir erneut begonnen zu Recherchieren und sind auf ein Git repository gestoßen, welches vielversprechend aussah. Somit haben wir unser Thema eher in die Richtung des General Purpose Image Captioning Algorithmus verändert. Der neue Datensatz den wir mit diesem Model gefunden haben, hat sogar 4 Captions pro Bild. Zudem hätten wir den alten Datensatz aufwendig an das benötigte Format anpassen müssen.
     """)
 
 
-st.subheader("01.06.22 Modeling")
+st.subheader("01.06.22 ")
 
-with st.expander("See more"):
+with st.expander("Modeling"):
      st.write("""Diese Woche haben wir dafür genutzt, unseren Algorithmus zum Laufen zu bringen. Zunächst hatten wir versucht mit dem alten Datenset zu arbeiten. Was aufgrund des Datenformats nicht funktioniert hat. Zudem nutzen wir drei Modelle: Inception v3 tensorflow Machine Learning und Text vectorasation Sowie ein Imagecaptioning Model. Hier ist viel Zeit und Arbeit reingeflossen, um diese drei Modelle zusammen zum Laufen zu bringen.
     """)
 
 
-st.subheader("08.06.22 Fragesession")
+st.subheader("08.06.22 ")
 
-with st.expander("See more"):
+with st.expander("Fragesession"):
      st.write("""Die Fragestunde haben wir genutzt, um abzuklären ob auch unser neuer Datensatz verwendet werden darf. Nachdem wir diesen nutzen dürfen, kam nun der Versuch unser trainiertes Model auf Streamlit zum Laufen zu bringen. Da wir 3 Modelle in Streamlit laufen lassen müssen damit unser Captioning funktioniert, sind wir schnell an die Grenzen von Streamlit gestoßen. Zum einen muss das imagecaptioning model laufen und vorher sind noch zwei Modelle um die Bilder pre Prozessen zu können. Außerdem muss das Dictionary immer neu aufgebaut werden weil es sonst überschrieben wird. Nachdem wir sehr viel Arbeit reingesteckt haben, haben wir einsehen müssen, dass es leider nicht funktioniert, da wir einfach zu große Datenmengen verarbeiten. 
    """)
 
 
-st.subheader("15.06.22 Evaluation")
+st.subheader("15.06.22 ")
 
-with st.expander("See more"):
+with st.expander("Evaluation"):
      st.write("""Für die Evaluation haben wir ein paar Beispiele, um zu veranschaulichen, wie viel besser das Programm mit zunehmenden Training wird.
       """)
      
