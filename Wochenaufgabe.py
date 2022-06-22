@@ -79,6 +79,7 @@ with st.expander("See more"):
         In der ersten Woche haben wir mit Streamlit eine kleine erste App gebaut und die Installation der erforderlichen Programme durchgeführt. Es gab kleinere Schwierigkeiten beim Einarbeiten, da viele neue Programme auf einmal benötigt wurden und wir uns zuerst einen Überblick machen mussten, welche welches Programm welche Funktion erfüllt.
      """)
 
+
 st.subheader("04.05.22 ersten zwei Phasen des CRISP-DM Data understanding")
 
 with st.expander("See more"):
@@ -86,6 +87,28 @@ with st.expander("See more"):
         In der Zweiten Woche haben wir uns näher mit unserem Datensatz auseinandergesetzt und uns genauer überlegt, was wir mit unserem Projekt eigentlich machen wollen. Zunächst haben wir hierfür Ideen gesammelt und uns dann auf Emergency Vehicles geeinigt. Das Datenset ist zwar sehr groß, aber einfach zu filtern mit Hilfe eines Web Programms (hier einfügen), zudem liegt pro Bild bereits eine Bildunterschrift in verschiedenen Sprachen vor. Als erstes haben wir uns auf die Sprache Englisch festgelegt.
         """)
 
+
+st.subheader("11.05.22 Related Work")
+
+with st.expander("See more"):
+     st.write("""
+        In dieser Woche haben wir begonnen zu recherchieren. Zunächst jeder für sich, mit verschiedenen Suchmaschinen geschaut was man findet. Als erstes hat jeder sich generell eingelesen über Machine Learning im Image Captioning Bereich um dann gezielt nach Emergency Vehicle Erkennung zu suchen. Tatsächlich waren auch einige relevante Paper dabei, teilweise sogar mit Code.
+        """)
+
+
+st.subheader("18.05.22 Datapreperation")
+
+with st.expander("See more"):
+     st.write("""
+        Zunächst haben wir den Datensatz eingeschränkt. Mit den Suchbegriffen „vehicle“ „emergency vehicle“ „traffic“ etc. Schnell haben wir gemerkt, dass für unser Thema der Datensatz zu klein ist, um ein Algorithmus sinnvoll zu trainieren. Außerdem hatten wir Schwierigkeiten mit Sinnvollen Bildern, da zum Beispiel viele Spielzeugautos mit in unserem Datensatz waren.
+        """)
+
+
+st.subheader("25.05.22 Austausch und aktueller Stand")
+
+with st.expander("See more"):
+     st.write("""Nachdem wir unseren aktuellen Stand der Recherche präsentiert haben, haben wir als Feedback bekommen uns nicht ganz so zu beschränken und noch einmal einen Schritt zurück zu gehen. Daraufhin haben wir noch einmal begonnen zu Recherchieren und sind auf ein Git repository gestoßen, das vielversprechend aussah. Somit haben wir unser Thema mehr hin zu einem General Purpose Image Captioning Algorithmus verändert. Der neue Datensatz, den wir mit diesem Model gefunden haben, hat sogar 4 Captions pro Bild. Zudem hätten wir den alten Datensatz aufwendig an das benötigte Format anpassen müssen.
+         """)
 
 
 
