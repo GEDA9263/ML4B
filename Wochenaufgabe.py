@@ -65,6 +65,9 @@ if len(selection["selected_rows"]) > 0:
     st.image('pictures/' + str(id) + '.jpg')
     st.write(selection["selected_rows"][0]["caption"])
 
+         
+st.text("")
+st.text("")
 st.markdown("***")
 st.text("")
 st.text("")
@@ -76,7 +79,7 @@ with st.expander("See more"):
         In der ersten Woche haben wir mit Streamlit eine kleine erste App gebaut und die Installation der Programme durchgeführt. Es gab kleinere Schwierigkeiten beim Einarbeiten da so viele neue Programme auf einmal da waren und wir uns erst einmal einen Überblick machen mussten, welche welches Programm für was da ist.
      """)
 
-st.title("04.05.22 ersten zwei Phasen des CRISP-DM Data understanding")
+st.subheader("04.05.22 ersten zwei Phasen des CRISP-DM Data understanding")
 
 with st.expander("See more"):
      st.write("""
