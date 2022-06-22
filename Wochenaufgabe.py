@@ -110,7 +110,7 @@ st.subheader("25.05.22 Austausch und aktueller Stand")
 
 with st.expander("See more"):
      st.write("""Nachdem wir unseren aktuellen Stand der Recherche präsentiert haben, haben wir als Feedback bekommen uns nicht ganz so zu beschränken und noch einmal einen Schritt zurück zu gehen. Daraufhin haben wir noch einmal begonnen zu Recherchieren und sind auf ein Git repository gestoßen, das vielversprechend aussah. Somit haben wir unser Thema mehr hin zu einem General Purpose Image Captioning Algorithmus verändert. Der neue Datensatz, den wir mit diesem Model gefunden haben, hat sogar 4 Captions pro Bild. Zudem hätten wir den alten Datensatz aufwendig an das benötigte Format anpassen müssen.
-         """)
+    """)
 
 
 st.subheader("01.06.22 Modeling")
@@ -118,6 +118,13 @@ st.subheader("01.06.22 Modeling")
 with st.expander("See more"):
      st.write("""Diese Woche haben wir dafür genutzt unseren Algorithmus zum Laufen zubringen. Zunächst hatten wir versucht mit den alten Datenset zuarbeiten. Was aufgrund des Datenformats nicht funktioniert hat. Zudem nutzen wir drei Modelle: Inception v3 tensorflow Manchine Learning und Text vectorasation Sowie ein Imagecaptioning Model. Hier ist viel Arbeit reingeflossen, um diese drei Modelle zusammen zum Laufen zu bringen.
     """)
+
+
+st.subheader("08.06.22 Fragesession")
+
+with st.expander("See more"):
+     st.write("""Die Fragestunde haben wir genutzt, um abzuklären ob auch unser neuer Datensatz verwendet werden darf. Nach dem wir diesen nutzen dürfen, kam nun der Versuch unser trainiertes Model auf Streamlit zum Laufen zu bringen. Da wir 3 Modelle in Streamlit Laufen lassen müssen, damit unser Captioning funktioniert, sind wir schnell an die Grenzen von Streamlit gestoßen. Zum einen muss das imagecaptioning model  laufen und vorher sind noch zwei Modelle um die Bilder pre Prozessen zu können. Außerdem muss das Dictionary immer neu aufgebaut werden weil es sonst überschrieben wird. Nach dem wir sehr viel Arbeit reingesteckt haben, haben wir irgendwann einsehen müssen, dass es leider nicht Funktioniert, da wir einfach zu große Datenmengen verarbeiten. 
+   """)
 
 
 
