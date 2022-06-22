@@ -157,10 +157,10 @@ with st.expander("Our Team:"):
     col1, col2 = st.columns(2)
 with col1:
          st.markdown(f'<h1 style="color:#454545;font-size:16px;">{"Epoche 10"}</h1>', unsafe_allow_html=True)
-    st.image("10epochen.jpeg")
+    st.image("10epochen.jpg")
 
 with col2:
           st.markdown(f'<h1 style="color:#454545;font-size:16px;">{"Epoche 10"}</h1>', unsafe_allow_html=True)
-                  st.image("20epochen")
+                  st.image("20epochen.jpg")
          
 
