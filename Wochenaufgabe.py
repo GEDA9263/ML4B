@@ -132,12 +132,26 @@ st.subheader("15.06.22 Evaluation")
 with st.expander("See more"):
      st.write("""Für die Evaluation haben wir ein paar Beispiele, um zu veranschaulichen, wie viel besser das Programm mit zunehmenden Training wird.
       """)
+
+st.text("")
+st.text("")
+st.markdown("***")
+st.text("")
+st.text("")
+
+
+
      
      st.write("""Zwischenzeitlich hatten wir noch mit einen paar Bugs zu kämpfen zum Beispiel wurden uns immer die maximale Anzahl an Wörter in der Caption ausgegeben, anstatt eine Sinnvolle Caption. So ist zum Beispiel dieser Wörtersalat entstanden:    
      """)
 
-st.image("epochen.jpg")
 
+
+st.subheader("22.06.22 Deployment - Feinschliff der Streamlit App")
+
+with st.expander("See more"):
+     st.write("""Die letzten Tage vor der Abgabe haben wir nun gebraucht, um die Streamlit app aufzuhübschen.
+     """)
 
 
 
