@@ -72,6 +72,8 @@ st.markdown("***")
 st.text("")
 st.text("")
 
+st.title("Chronologischer Ablauf")
+
 st.subheader("03.05.22 Gruppenaufteilung / Erste Schritte")
 
 with st.expander("See more"):
