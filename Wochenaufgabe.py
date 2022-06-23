@@ -16,9 +16,9 @@ st.write('Wir haben uns als Projekt für Image Captioning entschieden.  \n'
          'Das heißt, es soll ein Modell trainiert werden, welches in der Lage ist eine Bildunterschrift für Bilder einer spezifischen Domäne, also innerhalb eines spezifischen Bereiches, zu erzeugen.')
 
 st.subheader('Datenset')
-st.write('Als Datenset wird zum trainieren und testen das LAION5B Datenset verwenden, welches eine Sammlung von 6 Milliarden Bildern und 240 TB an Größe darstellt.  \n'
-         'In der nachfolgenden Tabelle ist ein Ausschnitt aus einem Subset dargestellt, welchen man benutzen kann um die entsprechenden Bilder mithilfe der URL zu downloaden.  \n'
-         'Hierzu einfach eine beliebige Zeile selektieren, das ausgewählte Bild wird anschließend angezeigt.')
+st.write('Ursprünglich wurde das LAION5B Datenset als Trainingsdatenset zur verfügung gestellt. Im Laufe des Semesters haben wir uns jedoch gegen dieses Datenset entschieden. \n'
+         'Als Datenset wird zum trainieren und testen verwenden wir das MicrosoftCoco 2014 train/validation split Datenset, welches eine Sammlung von 82 Tausend Bildern und 13 GB an dazugehörigen Daten darstellt.  \n'
+         'Um Bildunterschriften für unseren Showcase zu genwerieren selektieren Sie bitte eine beliebige Zeile, das ausgewählte Bild wird anschließend mit der automatisch generierter Bildunterschrift, sowie der originalen Bildunterschrift angezeigt.')
 
 
 df = pd.read_json('DogSubset.json')
