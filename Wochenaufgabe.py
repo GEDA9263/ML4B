@@ -154,36 +154,52 @@ st.text("")
 st.title("Beispielbilder")
 
 
-with st.expander("Epochen 10 und 20"):
+with st.expander("Epoche 10"):
     col1, col2 = st.columns(2)
-with col1:
-        
-    st.image("10epochen.jpg")
-
+with col1:    
+    st.image("/Trainingsbilder/Pferde/Pferde_10_Epochen.jpg")
 with col2:
-         st.image("20epochen.jpg")
+    st.image("/Trainingsbilder/Elefant/10 Epochen Elefant.jpg")
          
-         
-         
-with st.expander("Epochen 30 und 40"):
+          
+with st.expander("Epoche 20"):
     col1, col2 = st.columns(2)
-with col1:
-        
-    st.image("30epochen.jpg")
-
+with col1:    
+    st.image("/Trainingsbilder/Pferde/Pferde_20_Epochen.jpg")
 with col2:
-         st.image("40epochen.jpg")
+    st.image("/Trainingsbilder/Elefant/30 Epochen Elefant.jpg")
          
-         
-         
-with st.expander("Epoche 50 und Epoche 60"):
+             
+with st.expander("Epoche 30"):
     col1, col2 = st.columns(2)
-with col1:
-        
-    st.image("50epochen.jpg")
-
+with col1:    
+    st.image("/Trainingsbilder/Pferde/Pferde_30_Epochen.jpg")
 with col2:
-         st.image("60epochen.jpg")
+    st.image("/Trainingsbilder/Elefant/30 Epochen Elefant.jpg")
+
+
+with st.expander("Epoche 40"):
+    col1, col2 = st.columns(2)
+with col1:    
+    st.image("/Trainingsbilder/Pferde/Pferde_40_Epochen.jpg")
+with col2:
+    st.image("/Trainingsbilder/Elefant/40 Epochen Elefant.jpg")
+
+
+with st.expander("Epoche 50"):
+    col1, col2 = st.columns(2)
+with col1:    
+    st.image("/Trainingsbilder/Pferde/Pferde_50_Epochen.jpg")
+with col2:
+    st.image("/Trainingsbilder/Elefant/50 Epochen Elefant.jpg")
+
+with st.expander("Epoche 60 & 70"):
+    col1, col2 = st.columns(2)
+with col1:    
+    st.image("/Trainingsbilder/Pferde/Pferde_60_Epochen.jpg")
+with col2:
+    st.image("/Trainingsbilder/Elefant/60 Epochen Elefant.jpg")
+    st.image("/Trainingsbilder/Elefant/70 Epochen Elefant.jpg")
          
          
 with st.expander("Epochen Loss Plot"):
