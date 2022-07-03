@@ -159,7 +159,7 @@ with st.expander("Epoche 10"):
 with col1:    
     st.image("Trainingsbilder/Pferde/Pferde_10_Epochen.jpg")
 with col2:
-    st.image("Trainingsbilder/Elefant/10 Epochen Elefant.jpg")
+    st.image("Trainingsbilder/Elefanten/10 Epochen Elefant.jpg")
          
           
 with st.expander("Epoche 20"):
@@ -167,7 +167,7 @@ with st.expander("Epoche 20"):
 with col1:    
     st.image("Trainingsbilder/Pferde/Pferde_20_Epochen.jpg")
 with col2:
-    st.image("Trainingsbilder/Elefant/30 Epochen Elefant.jpg")
+    st.image("Trainingsbilder/Elefanten/30 Epochen Elefant.jpg")
          
              
 with st.expander("Epoche 30"):
@@ -175,7 +175,7 @@ with st.expander("Epoche 30"):
 with col1:    
     st.image("Trainingsbilder/Pferde/Pferde_30_Epochen.jpg")
 with col2:
-    st.image("Trainingsbilder/Elefant/30 Epochen Elefant.jpg")
+    st.image("Trainingsbilder/Elefanten/30 Epochen Elefant.jpg")
 
 
 with st.expander("Epoche 40"):
@@ -183,7 +183,7 @@ with st.expander("Epoche 40"):
 with col1:    
     st.image("Trainingsbilder/Pferde/Pferde_40_Epochen.jpg")
 with col2:
-    st.image("Trainingsbilder/Elefant/40 Epochen Elefant.jpg")
+    st.image("Trainingsbilder/Elefanten/40 Epochen Elefant.jpg")
 
 
 with st.expander("Epoche 50"):
@@ -191,15 +191,15 @@ with st.expander("Epoche 50"):
 with col1:    
     st.image("Trainingsbilder/Pferde/Pferde_50_Epochen.jpg")
 with col2:
-    st.image("Trainingsbilder/Elefant/50 Epochen Elefant.jpg")
+    st.image("Trainingsbilder/Elefanten/50 Epochen Elefant.jpg")
 
 with st.expander("Epoche 60 & 70"):
     col1, col2 = st.columns(2)
 with col1:    
     st.image("Trainingsbilder/Pferde/Pferde_60_Epochen.jpg")
 with col2:
-    st.image("Trainingsbilder/Elefant/60 Epochen Elefant.jpg")
-    st.image("Trainingsbilder/Elefant/70 Epochen Elefant.jpg")
+    st.image("Trainingsbilder/Elefanten/60 Epochen Elefant.jpg")
+    st.image("Trainingsbilder/Elefanten/70 Epochen Elefant.jpg")
          
          
 with st.expander("Epochen Loss Plot"):
