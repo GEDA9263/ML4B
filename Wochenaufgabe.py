@@ -136,7 +136,7 @@ with st.expander("Evaluation"):
      st.write("""Zwischenzeitlich hatten wir noch mit ein paar Bugs zu kämpfen, zum Beispiel wurden uns immer die maximale Anzahl an Wörter in der Caption ausgegeben, anstatt eine Sinnvolle Caption. So ist zum Beispiel dieser Wörtersalat entstanden:    
      """)
 
-st.image("brokencaption.jpg")
+st.image("/Trainingsbilder/brokencaption.jpg")
 
 st.subheader("22.06.22 ")
 
