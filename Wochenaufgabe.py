@@ -203,5 +203,5 @@ with col2:
          
          
 with st.expander("Epochen Loss Plot"):
-          st.image("epochen.jpg")
+          st.image("Trainingsbilder/Pferde/Pferde_Loss_Plot.jpg")
 
