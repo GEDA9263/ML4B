@@ -32,23 +32,23 @@ with st.container:
          Returns:
          dict: The selected row
          """
-         options = GridOptionsBuilder.from_dataframe(
-                  df, enableRowGroup=True, enableValue=True, enablePivot=True
-         )
+                  options = GridOptionsBuilder.from_dataframe(
+                           df, enableRowGroup=True, enableValue=True, enablePivot=True
+                  )
 
-         options.configure_side_bar()
+                  options.configure_side_bar()
 
-         options.configure_selection("single")
-         selection = AgGrid(
-                  df,
-                  enable_enterprise_modules=True,
-                  gridOptions=options.build(),
-                  theme="dark",
-                  update_mode=GridUpdateMode.MODEL_CHANGED,
-                  allow_unsafe_jscode=True,
-         )
+                  options.configure_selection("single")
+                  selection = AgGrid(
+                           df,
+                           enable_enterprise_modules=True,
+                           gridOptions=options.build(),
+                           theme="dark",
+                           update_mode=GridUpdateMode.MODEL_CHANGED,
+                           allow_unsafe_jscode=True,
+                  )
 
-         return selection
+                  return selection
 
 
          selection = aggrid_interactive_table(df)
