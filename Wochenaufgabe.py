@@ -75,9 +75,12 @@ st.text("")
 st.title("Chronologischer Ablauf")
 
 with st.sidebar: 
-         st.button("Projektpräsentation")
-         st.subheader("03.05.22 - Gruppenaufteilung / Erste Schritte")
+         präsentation = st.button("Projektpräsentation", key="Präsentation")
+         st.button("03.05.22 - Gruppenaufteilung / Erste Schritte")
 
+         if präsentation:
+                  st.write("Knopf wurde gedrückt")
+                  
 with st.expander("Gruppenaufteilung / Erste Schritte"):
      st.write("""
         In der ersten Woche haben wir mit Streamlit eine kleine erste App gebaut und die Installation der erforderlichen Programme durchgeführt. Es gab kleinere Schwierigkeiten beim Einarbeiten, da viele neue Programme auf einmal benötigt wurden und wir uns zuerst einen Überblick verschaffen mussten, welches Programm welche Funktion erfüllt.
