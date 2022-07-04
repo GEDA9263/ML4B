@@ -6,7 +6,7 @@ import requests
 import os.path
 
 
-Präsentationscontainer = st.container()
+Präsentationscontainer = st.empty()
 
 Präsentationscontainer.title('Projektpräsentation')
 Präsentationscontainer.subheader('Teamvorstellung')
@@ -198,5 +198,5 @@ if präsentation:
   st.write("Knopf wurde gedrückt")
 if Knopf1: 
   Präsentationscontainer.empty()
-  st.wirte("Knopf1 wurde gedrückt")
+  st.write("Knopf1 wurde gedrückt")
 
