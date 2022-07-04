@@ -78,8 +78,6 @@ with st.sidebar:
          präsentation = st.button("Projektpräsentation", key="Präsentation")
          st.button("03.05.22 - Gruppenaufteilung / Erste Schritte")
 
-         if präsentation:
-                  st.write("Knopf wurde gedrückt")
                   
 with st.expander("Gruppenaufteilung / Erste Schritte"):
      st.write("""
@@ -209,4 +207,7 @@ with col2:
          
 with st.expander("Epochen Loss Plot"):
           st.image("Trainingsbilder/Pferde/Pferde_Loss_Plot.jpg")
+                  
+if präsentation:
+                  st.write("Knopf wurde gedrückt")
 
