@@ -5,12 +5,13 @@ from st_aggrid.shared import GridUpdateMode
 import requests
 import os.path
 
+option = st.selectbox("Wählen Sie bitte das Datenset aus", ('Verkehr', 'Notfallfahrzeuge', 'Random'))
 st.header("18.05.22 - Data Preparation")
 st.write("""
         Zunächst haben wir den Datensatz eingeschränkt. Mit den Suchbegriffen „vehicle“, „emergency vehicle“ und „traffic“ etc. Schnell haben wir gemerkt, dass der Datensatz für unser Thema zu klein ist, um einen Algorithmus sinnvoll zu trainieren. Außerdem hatten wir Schwierigkeiten sinnvolle Bilder zu finden, da beispielsweise viele Spielzeugautos mit in unserem Datensatz waren.
         """)
 
-df = pd.read_json('trafficSubset.json')
+
 
 def aggrid_interactive_table(df: pd.DataFrame):
     """Creates an st-aggrid interactive table based on a dataframe.
@@ -37,6 +38,15 @@ def aggrid_interactive_table(df: pd.DataFrame):
 
     return selection
 
+subset = ""
+if (option == 'Verkehr'):
+        subset = 'trafficSubset.json'
+elif(option = 'Notfallfahrzeuge'):
+        subset = 'emergencyVehicleSubset.json'
+elif(option = 'Random'):
+        subset = 'clipsubset.json.json'
+
+df = pd.read_json(subset)
 selection = aggrid_interactive_table(df)
 
 if len(selection["selected_rows"]) > 0:
