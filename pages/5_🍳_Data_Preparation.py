@@ -5,8 +5,13 @@ from st_aggrid.shared import GridUpdateMode
 import requests
 import os.path
 
+st.set_page_config(
+    page_title="Data Preparation",
+    page_icon="🍳",
+)
+
 option = st.sidebar.selectbox("Wählen Sie bitte das Datenset aus", ('Verkehr', 'Fahrzeuge'))
-st.header("18.05.22 - Data Preparation")
+st.header("🍳 - 18.05.22 - Data Preparation")
 st.write("""
         Zunächst haben wir den Datensatz eingeschränkt. Mit den Suchbegriffen „vehicle“, „emergency vehicle“ und „traffic“ etc. Schnell haben wir gemerkt, dass der Datensatz für unser Thema zu klein ist, um einen Algorithmus sinnvoll zu trainieren. Außerdem hatten wir Schwierigkeiten sinnvolle Bilder zu finden, da beispielsweise viele Spielzeugautos mit in unserem Datensatz waren.
         """)
