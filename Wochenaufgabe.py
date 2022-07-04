@@ -21,8 +21,6 @@ st.write('Ursprünglich wurde uns das LAION5B Datenset als Trainingsdatenset zur
          'Um Bildunterschriften für unseren Show-Case zu generieren, selektieren Sie bitte eine beliebige Zeile, das ausgewählte Bild wird anschließend mit der automatisch generierter Bildunterschrift, sowie der originalen Bildunterschrift angezeigt.')
 
 
-df = pd.read_json('DogSubset.json')
-
 def aggrid_interactive_table(df: pd.DataFrame):
     """Creates an st-aggrid interactive table based on a dataframe.
 
@@ -50,6 +48,8 @@ def aggrid_interactive_table(df: pd.DataFrame):
 
     return selection
 
+
+df = pd.read_json('DogSubset.json')
 
 selection = aggrid_interactive_table(df)
 
