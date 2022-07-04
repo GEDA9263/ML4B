@@ -62,7 +62,7 @@ st.title("Chronologischer Ablauf")
 
 with st.sidebar: 
          präsentation = st.button("Projektpräsentation", key="Präsentation")
-         st.button("03.05.22 - Gruppenaufteilung / Erste Schritte")
+         Knopf1 = st.button("03.05.22 - Gruppenaufteilung")
 
                   
 with st.expander("Gruppenaufteilung / Erste Schritte"):
@@ -195,5 +195,8 @@ with st.expander("Epochen Loss Plot"):
           st.image("Trainingsbilder/Pferde/Pferde_Loss_Plot.jpg")
                   
 if präsentation:
-                  st.write("Knopf wurde gedrückt")
+  st.write("Knopf wurde gedrückt")
+if Knopf1: 
+  Präsentationscontainer.empty()
+  
 
