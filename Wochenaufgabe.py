@@ -74,7 +74,8 @@ st.text("")
 
 st.title("Chronologischer Ablauf")
 
-st.subheader("03.05.22 ")
+with st.sidebar 
+         st.subheader("03.05.22 - Gruppenaufteilung / Erste Schritte")
 
 with st.expander("Gruppenaufteilung / Erste Schritte"):
      st.write("""
