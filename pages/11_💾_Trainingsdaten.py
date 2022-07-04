@@ -25,5 +25,5 @@ elif(option == 'Epoche 60'):
 elif(option == 'Epoche 70'):
     st.image("Trainingsbilder/Elefanten/70 Epochen Elefant.png",  width=breite)
 elif(option == 'Verlustgrafik'):
-     st.image("Trainingsbilder/Pferde/Pferde_Loss_Plot.jpg", width=breite/2)
-     st.image("Trainingsbilder/Elefanten/Verlustdiagramm 70 Epochen.png", width=breite/2)
+     st.image("Trainingsbilder/Pferde/Pferde_Loss_Plot.jpg", width=(breite/2))
+     st.image("Trainingsbilder/Elefanten/Verlustdiagramm 70 Epochen.png", width=(breite/2))
