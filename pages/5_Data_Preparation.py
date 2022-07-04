@@ -60,5 +60,5 @@ if(optin != ''):
         if not bool:
                 r = requests.get(url, allow_redirects=True)
                 open("pictures/" + str(id) + '.jpg', "wb").write(r.content)
-    st.image('pictures/' + str(id) + '.jpg')
-    st.write(selection["selected_rows"][0]["caption"])
+        st.image('pictures/' + str(id) + '.jpg')
+        st.write(selection["selected_rows"][0]["caption"])
