@@ -44,7 +44,7 @@ if (option == 'Verkehr'):
 elif(option == 'Notfallfahrzeuge'):
         subset = 'emergencyVehicleSubset.json'
 elif(option == 'Random'):
-        subset = 'clipsubset.json.json'
+        subset = 'clipsubset.json'
 
         
 if(option != ''):
