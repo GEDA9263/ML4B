@@ -198,5 +198,5 @@ if präsentation:
   st.write("Knopf wurde gedrückt")
 if Knopf1: 
   Präsentationscontainer.empty()
-  
+  st.wirte("Knopf1 wurde gedrückt")
 
