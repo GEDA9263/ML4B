@@ -6,6 +6,11 @@ import requests
 import os.path
 
 
+st.set_page_config(
+    page_title="Projektpräsentation",
+    page_icon="📽️",
+)
+
 st.title('Projektpräsentation')
 st.subheader('Teamvorstellung')
 
