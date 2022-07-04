@@ -6,50 +6,64 @@ import requests
 import os.path
 
 
-Präsentationscontainer = st.container()
+st.title('Projektpräsentation')
+st.subheader('Teamvorstellung')
 
-Präsentationscontainer.title('Projektpräsentation')
-Präsentationscontainer.subheader('Teamvorstellung')
-Präsentationscontainer.write('Wir sind Gruppe 11 und bestehen aus Jorgo, Debora und Daniel. Wir alle studieren Wirtschaftsinformatik im 4. Semester.')
-Präsentationscontainer.subheader('Projektvorstellung')
-Präsentationscontainer.write('Wir haben uns als Projekt für Image Captioning entschieden.  \n' 
-                             'Das heißt, es soll ein Modell trainiert werden, welches in der Lage ist eine Bildunterschrift für Bilder einer spezifischen Domäne, also innerhalb eines spezifischen Bereiches, zu erzeugen.')
-Präsentationscontainer.subheader('Datenset')
-Präsentationscontainer.write('Ursprünglich wurde uns das LAION5B Datenset als Trainingsdatenset zur Verfügung gestellt. Im Laufe des Semesters haben wir uns jedoch gegen dieses Datenset entschieden. \n'
-                  'Als Datenset zum trainieren und testen verwenden wir das MicrosoftCoco 2014 train/validation split Datenset, welches eine Sammlung von 82 Tausend Bildern und 13 GB an dazugehörigen Daten darstellt.  \n'
-                  'Um Bildunterschriften für unseren Show-Case zu generieren, selektieren Sie bitte eine beliebige Zeile, das ausgewählte Bild wird anschließend mit der automatisch generierter Bildunterschrift, sowie der originalen Bildunterschrift angezeigt.')
+st.write('Wir sind Gruppe 11 und bestehen aus Jorgo, Debora und Daniel. Wir alle studieren Wirtschaftsinformatik im 4. Semester.')
+
+st.subheader('Projektvorstellung')
+st.write('Wir haben uns als Projekt für Image Captioning entschieden.  \n' 
+         'Das heißt, es soll ein Modell trainiert werden, welches in der Lage ist eine Bildunterschrift für Bilder einer spezifischen Domäne, also innerhalb eines spezifischen Bereiches, zu erzeugen.')
+
+st.subheader('Datenset')
+st.write('Ursprünglich wurde uns das LAION5B Datenset als Trainingsdatenset zur Verfügung gestellt. Im Laufe des Semesters haben wir uns jedoch gegen dieses Datenset entschieden. \n'
+         'Als Datenset zum trainieren und testen verwenden wir das MicrosoftCoco 2014 train/validation split Datenset, welches eine Sammlung von 82 Tausend Bildern und 13 GB an dazugehörigen Daten darstellt.  \n'
+         'Um Bildunterschriften für unseren Show-Case zu generieren, selektieren Sie bitte eine beliebige Zeile, das ausgewählte Bild wird anschließend mit der automatisch generierter Bildunterschrift, sowie der originalen Bildunterschrift angezeigt.')
+
 
 df = pd.read_json('DogSubset.json')
 
 def aggrid_interactive_table(df: pd.DataFrame):
-  """Creates an st-aggrid interactive table based on a dataframe.
-  Args: df (pd.DataFrame]): Source dataframe
-  Returns: dict: The selected row """
-                  
-  options = GridOptionsBuilder.from_dataframe(df, enableRowGroup=True, enableValue=True, enablePivot=True)
-  options.configure_side_bar()
-  options.configure_selection("single")
-  selection = AgGrid(df,
-                    enable_enterprise_modules=True,
-                    gridOptions=options.build(),
-                    theme="dark",
-                    update_mode=GridUpdateMode.MODEL_CHANGED,
-                    allow_unsafe_jscode=True,
-                    )
-  return selection
+    """Creates an st-aggrid interactive table based on a dataframe.
+
+    Args:
+        df (pd.DataFrame]): Source dataframe
+
+    Returns:
+        dict: The selected row
+    """
+    options = GridOptionsBuilder.from_dataframe(
+        df, enableRowGroup=True, enableValue=True, enablePivot=True
+    )
+
+    options.configure_side_bar()
+
+    options.configure_selection("single")
+    selection = AgGrid(
+        df,
+        enable_enterprise_modules=True,
+        gridOptions=options.build(),
+        theme="light",
+        update_mode=GridUpdateMode.MODEL_CHANGED,
+        allow_unsafe_jscode=True,
+    )
+
+    return selection
+
+
 selection = aggrid_interactive_table(df)
 
 if len(selection["selected_rows"]) > 0:
-       Präsentationscontainer.write("Hier ist das ausgewählte Bild! ")
-       url = selection["selected_rows"][0]["url"]
-       id = selection["selected_rows"][0]["id"]
-       filename = str(id) + '.jpg'
-       bool = os.path.exists('pictures/' + filename)
-if not bool:
-       r = requests.get(url, allow_redirects=True)
-       open("pictures/" + str(id) + '.jpg', "wb").write(r.content)
-       Präsentationscontainer.image('pictures/' + str(id) + '.jpg')
-       Präsentationscontainer.write(selection["selected_rows"][0]["caption"])
+    st.write("Hier ist das ausgewählte Bild! ")
+    url = selection["selected_rows"][0]["url"]
+    id = selection["selected_rows"][0]["id"]
+    filename = str(id) + '.jpg'
+    bool = os.path.exists('pictures/' + filename)
+    if not bool:
+        r = requests.get(url, allow_redirects=True)
+        open("pictures/" + str(id) + '.jpg', "wb").write(r.content)
+    st.image('pictures/' + str(id) + '.jpg')
+    st.write(selection["selected_rows"][0]["caption"])
 
          
 st.text("")
@@ -60,11 +74,8 @@ st.text("")
 
 st.title("Chronologischer Ablauf")
 
-with st.sidebar: 
-         präsentation = st.button("Projektpräsentation", key="Präsentation")
-         Knopf1 = st.button("03.05.22 - Gruppenaufteilung")
+st.subheader("03.05.22 ")
 
-                  
 with st.expander("Gruppenaufteilung / Erste Schritte"):
      st.write("""
         In der ersten Woche haben wir mit Streamlit eine kleine erste App gebaut und die Installation der erforderlichen Programme durchgeführt. Es gab kleinere Schwierigkeiten beim Einarbeiten, da viele neue Programme auf einmal benötigt wurden und wir uns zuerst einen Überblick verschaffen mussten, welches Programm welche Funktion erfüllt.
@@ -193,10 +204,4 @@ with col2:
          
 with st.expander("Epochen Loss Plot"):
           st.image("Trainingsbilder/Pferde/Pferde_Loss_Plot.jpg")
-                  
-if präsentation:
-  st.write("Knopf wurde gedrückt")
-if Knopf1: 
-  Präsentationscontainer = st.epmty()
-  st.write("Knopf1 wurde gedrückt")
 
