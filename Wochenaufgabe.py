@@ -24,14 +24,14 @@ with st.container:
          df = pd.read_json('DogSubset.json')
 
          def aggrid_interactive_table(df: pd.DataFrame):
-         """Creates an st-aggrid interactive table based on a dataframe.
+                  """Creates an st-aggrid interactive table based on a dataframe.
 
-         Args:
-         df (pd.DataFrame]): Source dataframe
+                  Args:
+                  df (pd.DataFrame]): Source dataframe
 
-         Returns:
-         dict: The selected row
-         """
+                  Returns:
+                  dict: The selected row
+                  """
                   options = GridOptionsBuilder.from_dataframe(
                            df, enableRowGroup=True, enableValue=True, enablePivot=True
                   )
