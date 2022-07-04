@@ -15,7 +15,7 @@ elif(option == 'Epoche 30'):
     st.image("Trainingsbilder/Elefanten/30 Epochen Elefant.png",  width=breite)
 elif(option == 'Epoche 40'):
     st.image("Trainingsbilder/Pferde/Pferde_40_Epochen.jpg", width=breite)
-    st.image("Trainingsbilder/Elefanten/40 Epochen Elefant.png",  width=breite0)
+    st.image("Trainingsbilder/Elefanten/40 Epochen Elefant.png",  width=breite)
 elif(option == 'Epoche 50'):
     st.image("Trainingsbilder/Pferde/Pferde_50_Epochen.jpg", width=breite)
     st.image("Trainingsbilder/Elefanten/50 Epochen Elefant.png",  width=breite)
