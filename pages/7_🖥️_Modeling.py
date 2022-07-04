@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Modeling",
-    page_icon="🔙",
+    page_icon="🖥️",
 )
 
 st.header("🖥️ - 01.06.22 - Modeling")
