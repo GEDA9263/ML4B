@@ -21,8 +21,8 @@ images2 = ['https://farm3.staticflickr.com/2191/2187671374_8195774f3b_z.jpg',
           ]
 
 images3 = ['https://farm3.staticflickr.com/2224/2483765539_4babc436c5_z.jpg',
-           'https://farm4.staticflickr.com/3396/3447807165_e5052e9d4d_z.jpg',
-           'https://farm6.staticflickr.com/5522/9294690250_f1d3924b7f_z.jpg'
+           'https://farm6.staticflickr.com/5522/9294690250_f1d3924b7f_z.jpg',
+           'https://farm4.staticflickr.com/3396/3447807165_e5052e9d4d_z.jpg'
           ]
 
 captions = ['a man braiding the mane of a horse',
@@ -36,8 +36,8 @@ captions2 = ['a group of snowboarders posing for a photograph',
             ]
 
 captions3 = ['an old fire hydrant with some graffiti on it',
-            'a man in a field who is flying a kite.',
-            'a baseball player on the field warming up with his bat.'
+            'a baseball player on the field warming up with his bat.',
+             'a man in a field who is flying a kite.'
              ]
 col1, col2, col3 = st.columns(3)
 with col1:
