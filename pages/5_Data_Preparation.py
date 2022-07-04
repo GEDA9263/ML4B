@@ -47,7 +47,7 @@ elif(option == 'Random'):
         subset = 'clipsubset.json.json'
 
         
-if(optin != '')
+if(optin != ''):
         df = pd.read_json(subset)
         selection = aggrid_interactive_table(df)
 
