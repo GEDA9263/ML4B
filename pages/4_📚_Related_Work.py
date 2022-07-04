@@ -9,7 +9,5 @@ st.markdown(
          Gefundene Ressourcen, welche Code beinhalteten, waren zum Beispiel solche: 
          - https://github.com/BakingBrains/Emergency_Vehicle_Detection_-classification-/blob/main/Emergency%20Vehicle%20Identification.ipynb
          - https://github.com/DhilipSanjay/ANN-with-Momentum
-
-
          """"
 )
