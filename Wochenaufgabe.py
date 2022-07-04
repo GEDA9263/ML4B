@@ -6,7 +6,7 @@ import requests
 import os.path
 
 
-Präsentationscontainer = st.empty()
+Präsentationscontainer = st.container()
 
 Präsentationscontainer.title('Projektpräsentation')
 Präsentationscontainer.subheader('Teamvorstellung')
@@ -197,6 +197,6 @@ with st.expander("Epochen Loss Plot"):
 if präsentation:
   st.write("Knopf wurde gedrückt")
 if Knopf1: 
-  Präsentationscontainer.empty()
+  Präsentationscontainer = st.epmty()
   st.write("Knopf1 wurde gedrückt")
 
