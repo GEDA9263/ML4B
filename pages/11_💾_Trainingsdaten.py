@@ -6,9 +6,9 @@ option = st.sidebar.selectbox('Bitte wählen sie die Daten aus', ('Epoche 10', '
 if(option == 'Epoche 10'):
     col1, col2 = st.columns(2)
     with col1:
-        st.image("Trainingsbilder/Pferde/Pferde_10_Epochen.jpg", width=540)
+        st.image("Trainingsbilder/Pferde/Pferde_10_Epochen.jpg", width=720)
     with col2:
-        st.image("Trainingsbilder/Elefanten/10 Epochen Elefant.png")
+        st.image("Trainingsbilder/Elefanten/10 Epochen Elefant.png", width=720)
         
         
 with st.expander("Epoche 10"):
