@@ -1,6 +1,11 @@
 import streamlit as st
 
-st.title("Bilder")
+st.set_page_config(
+    page_title="Trainingsbilder",
+    page_icon="💾",
+)
+
+st.title("💾 - Trainingsbilder")
 option = st.sidebar.selectbox('Bitte wählen sie die Daten aus', ('Epoche 10', 'Epoche 20', 'Epoche 30', 'Epoche 40', 'Epoche 50', 'Epoche 60', 'Epoche 70', 'Verlustgrafik'))
 breite = 720
 
