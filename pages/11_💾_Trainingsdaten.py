@@ -1,6 +1,7 @@
 import streamlit as st
 
 st.title("Bilder")
+st.sidebar.selectbox('Bitte wählen sie die Daten aus', ('Epoche 10', 'Epoche 20'))
 
 with st.expander("Epoche 10"):
     col1, col2 = st.columns(2)
