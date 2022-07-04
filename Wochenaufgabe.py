@@ -5,7 +5,7 @@ from st_aggrid.shared import GridUpdateMode
 import requests
 import os.path
 
-st.sidebar
+st.sidebar.success("Wählen Sie bitte eine Seite aus")
 st.title('Projektpräsentation')
 st.subheader('Teamvorstellung')
 
