@@ -5,7 +5,7 @@ from st_aggrid.shared import GridUpdateMode
 import requests
 import os.path
 
-with st.container:
+with st.container():
          st.title('Projektpräsentation')
          st.subheader('Teamvorstellung')
 
