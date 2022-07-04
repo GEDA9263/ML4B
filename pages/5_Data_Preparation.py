@@ -5,7 +5,7 @@ from st_aggrid.shared import GridUpdateMode
 import requests
 import os.path
 
-option = st.selectbox("Wählen Sie bitte das Datenset aus", ('Verkehr', 'Notfallfahrzeuge', 'Random'))
+option = st.sidebar.selectbox("Wählen Sie bitte das Datenset aus", ('Verkehr', 'Notfallfahrzeuge', 'Random'))
 st.header("18.05.22 - Data Preparation")
 st.write("""
         Zunächst haben wir den Datensatz eingeschränkt. Mit den Suchbegriffen „vehicle“, „emergency vehicle“ und „traffic“ etc. Schnell haben wir gemerkt, dass der Datensatz für unser Thema zu klein ist, um einen Algorithmus sinnvoll zu trainieren. Außerdem hatten wir Schwierigkeiten sinnvolle Bilder zu finden, da beispielsweise viele Spielzeugautos mit in unserem Datensatz waren.
@@ -47,7 +47,7 @@ elif(option == 'Random'):
         subset = 'clipsubset.json.json'
 
         
-if(optin != ''):
+if(option != ''):
         df = pd.read_json(subset)
         selection = aggrid_interactive_table(df)
 
