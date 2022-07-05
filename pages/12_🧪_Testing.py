@@ -11,6 +11,8 @@ import json
 from PIL import Image
 import shutil
 
+st.write("Hier gibt es nun die Möglichkeit das trainierte Modell zu testen. Hierfür entweder das Testbild anzeigen lassen oder ein eigenes Bild hochladen")
+
 def load_image(image_path):
     img = tf.io.read_file(image_path)
     img = tf.io.decode_jpeg(img, channels=3)
