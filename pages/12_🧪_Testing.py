@@ -264,7 +264,7 @@ def TestMethod():
   
 
 def TestMethod2():
-    ckpt.restore(ckpt_manager.latest_checkpoint)
+    ckpt.restore(manager.latest_checkpoint)
     if os.path.exists(os.path.abspath('.') + '/tempDir'):
         shutil.rmtree('tempDir')
         
