@@ -168,21 +168,32 @@ class RNN_Decoder(tf.keras.Model):
   def reset_state(self, batch_size):
     return tf.zeros((batch_size, self.units))
 
+#encoder = CNN_Encoder(embedding_dim)
+#decoder = RNN_Decoder(embedding_dim, units, tokenizer.vocabulary_size()) 
+#optimizer = tf.keras.optimizers.Adam()
 
-encoder = CNN_Encoder(embedding_dim)
-decoder = RNN_Decoder(embedding_dim, units, tokenizer.vocabulary_size()) 
-optimizer = tf.keras.optimizers.Adam()
 
-def restoreCheckpoints():
-    checkpoint_path = "./checkpoints"
-    ckpt = tf.train.Checkpoint(encoder=encoder,
-                           decoder=decoder,
-                           optimizer=optimizer)
+checkpoint_path = "./checkpoints"
+
+#def restoreCheckpoints()
+#    ckpt = tf.train.Checkpoint(encoder=encoder,
+#                           decoder=decoder,
+#                           optimizer=optimizer)
+#    ckpt_manager = tf.train.CheckpointManager(ckpt, checkpoint_path, max_to_keep=2)
+#    if ckpt_manager.latest_checkpoint:
+#      ckpt.restore(ckpt_manager.latest_checkpoint)
+
+@st.cache()
+def makeManager():
+    ckpt = tf.train.Checkpoint(encoder=CNN_Encoder(embedding_dim)
+                               decoder=RNN_Decoder(embedding_dim, units, tokenizer.vocabulary_size()) 
+                               optimizer=tf.keras.optimizers.Adam())
     ckpt_manager = tf.train.CheckpointManager(ckpt, checkpoint_path, max_to_keep=2)
-    if ckpt_manager.latest_checkpoint:
-      ckpt.restore(ckpt_manager.latest_checkpoint)
+    return ckpt_manager, ckpt
 
-restoreCheckpoints()
+manager, ckpt = makeManager()
+
+#restoreCheckpoints()
 
 def evaluate(image):
     max_length = 50
@@ -251,7 +262,7 @@ def TestMethod():
   
 
 def TestMethod2():
-    
+    ckpt.restore(ckpt_manager.latest_checkpoint)
     if os.path.exists(os.path.abspath('.') + '/tempDir'):
         shutil.rmtree('tempDir')
         
