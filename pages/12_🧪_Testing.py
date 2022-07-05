@@ -256,5 +256,5 @@ if(test):
     TestMethod()
     
 if(test2):
-    if(file != None)
-    TestMethod2()
+    if(file != None):
+        TestMethod2()
