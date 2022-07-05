@@ -9,8 +9,10 @@ st.set_page_config(
 st.header("🔙 - 25.05.22 - Feedback")
 st.markdown("""Nachdem wir unseren aktuellen Stand der Recherche präsentiert haben, haben wir als Feedback bekommen uns nicht ganz so zu beschränken und noch einmal einen Schritt zurück zu gehen. Daraufhin haben wir erneut begonnen zu Recherchieren und sind auf ein Git repository gestoßen, welches vielversprechend aussah. Somit haben wir unser Thema eher in die Richtung des General Purpose Image Captioning Algorithmus verändert. 
 
-Der neue Datensatz den wir mit diesem Model gefunden haben, hat den großen Vorteil, dass dieser 5 Captions pro Bild hat. Jeder dieser Captions wurde von einem Menschen verfasst. Die Qualität des verwendeten Datensatzes war viel besser, deshalb entschlossen wir uns, diesen auch zu benutzen.
-    """)
+Der neue Datensatz Microsoft Coco den wir mit diesem Model gefunden haben, hat den großen Vorteil, dass dieser 5 Captions pro Bild hat. Jeder dieser Captions wurde von einem Menschen verfasst. Die Qualität des verwendeten Datensatzes war viel besser, deshalb entschlossen wir uns, diesen auch zu benutzen.
+   
+   Hier ein kleiner Ausschnitt aus dem Datenset: 
+   """)
 
 images = ['https://farm4.staticflickr.com/3210/3016304198_977b66924f_z.jpg',
           'https://farm3.staticflickr.com/2009/2456971230_5db8094526_z.jpg',
