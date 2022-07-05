@@ -235,7 +235,7 @@ def TestMethod():
 
 def TestMethod2():
      if not os.path.exists(os.path.abspath('.') + '/tempDir'):
-        os.mkdir(os.path.join(os.path, '/tempDir'))
+        os.mkdir(os.path.join(os.path.dirname(12_🧪_Testing.py), '/tempDir'))
         
      with open(os.path.join("tempDir",file.name),"wb") as f:
          f.write(file.getbuffer())
