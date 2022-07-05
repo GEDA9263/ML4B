@@ -36,7 +36,7 @@ image_features_extract_model = make_features_extract_model()
 
 
 
-loaded_tokenizer = pickle.load(open("tokenizer_layer.pkl", "rb"))
+loaded_tokenizer = pickle.load(open("checkpoints/tokenizer_layer.pkl", "rb"))
 new_tokenizer = tf.keras.layers.TextVectorization.from_config(loaded_tokenizer['config'])
 new_tokenizer.set_weights(loaded_tokenizer['weights'])
 tokenizer = new_tokenizer
