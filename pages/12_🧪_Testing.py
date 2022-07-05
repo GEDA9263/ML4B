@@ -11,6 +11,12 @@ import json
 from PIL import Image
 import shutil
 
+st.set_page_config(
+    page_title="Testing",
+    page_icon="🧪",
+)
+
+st.header("🧪_Testing")
 st.write("Hier gibt es nun die Möglichkeit das trainierte Modell zu testen. Hierfür entweder das Testbild anzeigen lassen oder ein eigenes Bild hochladen")
 
 def load_image(image_path):
