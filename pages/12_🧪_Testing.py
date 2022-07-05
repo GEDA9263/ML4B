@@ -218,7 +218,7 @@ def plot_attention(image, result, attention_plot):
         ax.imshow(temp_att, cmap='gray', alpha=0.6, extent=img.get_extent())
 
     plt.tight_layout()
-    st.pyplot(plt)
+    st.pyplot(fig= plt)
     
     
 def TestMethod():
