@@ -12,7 +12,7 @@ from PIL import Image
 import shutil
 
 def load_image(image_path):
-    img = tf.io.read_file(file)
+    img = tf.io.read_file(image_path)
     img = tf.io.decode_jpeg(img, channels=3)
     img = tf.keras.layers.Resizing(299, 299)(img)
     img = tf.keras.applications.inception_v3.preprocess_input(img)
@@ -234,10 +234,11 @@ def TestMethod():
   
 
 def TestMethod2():
+     with open(os.path.join("tempDir",file.name),"wb") as f:
+         f.write(file.getbuffer())
+     st.image('tempDir'.format(file.name))
     
-    result, attention_plot = evaluate(file)
-    st.write('Predicted Caption:', ' '.join(result))
-    plot_attention(image_path, result, attention_plot)
+    
     
 test = st.button('Test')   
 test2 = st.button('File Test')
