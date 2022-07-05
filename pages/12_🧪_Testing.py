@@ -234,7 +234,7 @@ def TestMethod():
   
 
 def TestMethod2():
-     if not os.path.exists(ps.path.abspath('.') + '/tempDir')
+     if not os.path.exists(ps.path.abspath('.') + '/tempDir'):
         os.mkdir(os.path.join(os.path, '/tempDir'))
         
      with open(os.path.join("tempDir",file.name),"wb") as f:
