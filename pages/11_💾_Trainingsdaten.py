@@ -43,4 +43,4 @@ elif(option == 'Epoche 70'):
 elif(option == 'Verlustgrafik'):
      st.image("Trainingsbilder/Pferde/Pferde_Loss_Plot.jpg", caption= 'Verlustgrafik der Pferde', width=int((breite/2)))
      st.image("Trainingsbilder/Elefanten/Verlustdiagramm 70 Epochen.png", caption = 'Verlustgrafik der Elefanten', width=int((breite/2)))
-     st.image("Trainingsbilder/Humann/Verlust Menschen.jpg", caption = 'Verlustgrafik der Ansammlung', width=int((breite/2)))
+     st.image("Trainingsbilder/Human/Verlust Menschen.jpg", caption = 'Verlustgrafik der Ansammlung', width=int((breite/2)))
