@@ -11,5 +11,5 @@ st.write("""Zwischenzeitlich hatten wir noch mit ein paar Bugs zu kämpfen, zum 
          """)
 st.image("Trainingsbilder/brokencaption.jpg")
 
-st.write("Ab und an war jedoch auch eine ziemlich lustige Vorhersage dabei:)
+st.write("Ab und an war jedoch auch eine ziemlich lustige Vorhersage dabei:")
 st.image("Trainingsbilder/brown_cow.jpg")
