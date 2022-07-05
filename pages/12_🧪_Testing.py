@@ -48,7 +48,7 @@ def make_features_extract_model():
 
 image_features_extract_model = make_features_extract_model()
 
-@st.cache()
+@st.cache(hash_funcs={"keras.utils.object_identity.ObjectIdentityDictionary": lambda _: None})
 def make_tokenizer():
     loaded_tokenizer = pickle.load(open("checkpoints/tokenizer_layer.pkl", "rb"))
     new_tokenizer = tf.keras.layers.TextVectorization.from_config(loaded_tokenizer['config'])
