@@ -183,7 +183,9 @@ checkpoint_path = "./checkpoints"
 #    if ckpt_manager.latest_checkpoint:
 #      ckpt.restore(ckpt_manager.latest_checkpoint)
 
-@st.cache()
+@st.cache(allow_output_mutation=True, ttl = 1800, hash_funcs={"keras.utils.object_identity.ObjectIdentityDictionary": lambda _: None,
+                                                  "builtins.weakref": lambda _: None,
+                                                  "tensorflow.python.training.tracking.base.TrackableReference": lambda _: None,  })
 def makeManager():
     ckpt = tf.train.Checkpoint(encoder=CNN_Encoder(embedding_dim),
                                decoder=RNN_Decoder(embedding_dim, units, tokenizer.vocabulary_size()), 
