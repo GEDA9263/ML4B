@@ -251,9 +251,10 @@ def TestMethod2():
 test = st.button('Testbild anzeigen lassen')   
 test2 = st.button('Eigenes Bild untertiteln')
 file = st.file_uploader('Bitte laden Sie ein Bild hoch', type= ['png', 'jpg'])
-st.write(file)
+
 if(test):
     TestMethod()
     
 if(test2):
+    if(file != None)
     TestMethod2()
