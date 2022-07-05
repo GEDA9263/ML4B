@@ -253,9 +253,11 @@ def TestMethod():
   
 
 def TestMethod2():
-    if not os.path.exists(os.path.abspath('.') + '/tempDir'):
-        os.mkdir('tempDir')
-      
+    
+    if os.path.exists(os.path.abspath('.') + '/tempDir'):
+        shutil.rmtree('dir_path')
+        
+    os.mkdir('tempDir')  
     with open(os.path.join("tempDir", file.name),"wb") as f:
          f.write(file.getbuffer())
             
