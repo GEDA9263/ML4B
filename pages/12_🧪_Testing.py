@@ -168,34 +168,22 @@ class RNN_Decoder(tf.keras.Model):
   def reset_state(self, batch_size):
     return tf.zeros((batch_size, self.units))
 
-#encoder = CNN_Encoder(embedding_dim)
-#decoder = RNN_Decoder(embedding_dim, units, tokenizer.vocabulary_size()) 
-#optimizer = tf.keras.optimizers.Adam()
+encoder = CNN_Encoder(embedding_dim)
+decoder = RNN_Decoder(embedding_dim, units, tokenizer.vocabulary_size()) 
+optimizer = tf.keras.optimizers.Adam()
 
 
-checkpoint_path = "./checkpoints"
 
-#def restoreCheckpoints()
-#    ckpt = tf.train.Checkpoint(encoder=encoder,
-#                           decoder=decoder,
-#                           optimizer=optimizer)
-#    ckpt_manager = tf.train.CheckpointManager(ckpt, checkpoint_path, max_to_keep=2)
-#    if ckpt_manager.latest_checkpoint:
-#      ckpt.restore(ckpt_manager.latest_checkpoint)
 
-@st.cache(allow_output_mutation=True, ttl = 1800, hash_funcs={"keras.utils.object_identity.ObjectIdentityDictionary": lambda _: None,
-                                                  "builtins.weakref": lambda _: None,
-                                                  "tensorflow.python.training.tracking.base.TrackableReference": lambda _: None,  })
-def makeManager():
-    ckpt = tf.train.Checkpoint(encoder=CNN_Encoder(embedding_dim),
-                               decoder=RNN_Decoder(embedding_dim, units, tokenizer.vocabulary_size()), 
-                               optimizer=tf.keras.optimizers.Adam())
+def restoreCheckpoints()
+    ckpt = tf.train.Checkpoint(encoder=encoder,
+                           decoder=decoder,
+                           optimizer=optimizer)
     ckpt_manager = tf.train.CheckpointManager(ckpt, checkpoint_path, max_to_keep=2)
-    return ckpt_manager, ckpt
+    if ckpt_manager.latest_checkpoint:
+      ckpt.restore(ckpt_manager.latest_checkpoint)
 
-manager, ckpt = makeManager()
-
-#restoreCheckpoints()
+restoreCheckpoints()
 
 def evaluate(image):
     max_length = 50
@@ -264,7 +252,6 @@ def TestMethod():
   
 
 def TestMethod2():
-    ckpt.restore(manager.latest_checkpoint)
     if os.path.exists(os.path.abspath('.') + '/tempDir'):
         shutil.rmtree('tempDir')
         
