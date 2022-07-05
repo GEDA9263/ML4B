@@ -255,7 +255,7 @@ def TestMethod():
 def TestMethod2():
     
     if os.path.exists(os.path.abspath('.') + '/tempDir'):
-        shutil.rmtree('dir_path')
+        shutil.rmtree('tempDir')
         
     os.mkdir('tempDir')  
     with open(os.path.join("tempDir", file.name),"wb") as f:
