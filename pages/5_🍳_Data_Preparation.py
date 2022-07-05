@@ -12,6 +12,30 @@ st.set_page_config(
 
 option = st.sidebar.selectbox("Wählen Sie bitte das Datenset aus", ('Verkehr', 'Fahrzeuge'))
 st.header("🍳 - 18.05.22 - Data Preparation")
+
+st.write(""" 
+        In dieser Woche ging es darum, unsere Daten auf- bzw. vorzubereiten.
+        """)
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.header("Gewünschte Daten")
+    st.markdown("""
+            - Einsatzfahrzeuge
+            - Verkehrsbilder
+            - Englische Bildunterschriften            
+           """)
+
+with col2:
+    st.header("Unerwünschte Daten")
+     st.markdown("""
+            - Tiere
+            - Menschen
+            - Häuser            
+           """)
+
+
 st.write("""
         Zunächst haben wir den Datensatz eingeschränkt. Mit den Suchbegriffen „vehicle“, „emergency vehicle“ und „traffic“ etc. Schnell haben wir gemerkt, dass der Datensatz für unser Thema zu klein ist, um einen Algorithmus sinnvoll zu trainieren zu können. Außerdem hatten wir Schwierigkeiten sinnvolle Bilder zu finden, da beispielsweise viele Spielzeugautos mit in unserem Datensatz waren.
         """)
