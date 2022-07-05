@@ -233,8 +233,8 @@ def TestMethod():
     
   
 
-def TestMethod2():
-    image=st.image('https://tensorflow.org/images/surf.jpg')
+def TestMethod2(name):
+    image=name
     result, attention_plot = evaluate(image)
     st.write('Predicted Caption:', ' '.join(result))
     plot_attention(image_path, result, attention_plot)
@@ -246,5 +246,5 @@ if(test):
     TestMethod()
     
 if(test2):
-    st.write(file)
-    st.image(file)
+    name = file.name
+    Testmethod2(name)
