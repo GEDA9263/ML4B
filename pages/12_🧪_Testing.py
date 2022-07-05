@@ -236,7 +236,8 @@ def TestMethod():
 def TestMethod2():
      if not os.path.exists(os.path.abspath('.') + '/tempDir'):
         os.mkdir('tempDir')
-       
+        
+     st.write(os.path.abspath('.'))
      st.write(os.path.join("tempDir", file.name))   
      with open(os.path.join("tempDir", file.name),"wb") as f:
          f.write(file.getbuffer())
