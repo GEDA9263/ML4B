@@ -225,7 +225,8 @@ def TestMethod():
     image_url = 'https://tensorflow.org/images/surf.jpg'
     image_extension = image_url[-4:]
     image_path = tf.keras.utils.get_file('image'+image_extension, origin=image_url)
-
+    st.write(image_path)
+    
     result, attention_plot = evaluate(image_path)
     st.write('Predicted Caption:', ' '.join(result))
     plot_attention(image_path, result, attention_plot)
@@ -242,7 +243,7 @@ test = st.button('Test')
 test2 = st.button('File Test')
 file = st.file_uploader('Bitte laden Sie ein Bild hoch', type= ['png', 'jpg'])
 if(test):
-    TestMethod2()
+    TestMethod()
     
 if(test2):
     st.write(file)
