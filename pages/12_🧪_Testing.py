@@ -233,8 +233,8 @@ def TestMethod():
     
   
 
-def TestMethod2(name):
-    image=name
+def TestMethod2():
+    image = tf.keras.utils.get_file(file.name, origin=file)
     result, attention_plot = evaluate(image)
     st.write('Predicted Caption:', ' '.join(result))
     plot_attention(image_path, result, attention_plot)
@@ -246,5 +246,4 @@ if(test):
     TestMethod()
     
 if(test2):
-    name = file.name
-    TestMethod2(name)
+    TestMethod2()
