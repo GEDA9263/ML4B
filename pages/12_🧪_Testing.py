@@ -238,6 +238,11 @@ def TestMethod2():
     st.write('Predicted Caption:', ' '.join(result))
     plot_attention(image_path, result, attention_plot)
     
-test = st.button('Test')    
+test = st.button('Test')   
+test2 = st.button('File Test')
+file = st.file_uploader('Bitte laden Sie ein Bild hoch', type= ['png', 'jpg'], on_change="")
 if(test):
     TestMethod2()
+    
+if(test2):
+    st.write(file)
