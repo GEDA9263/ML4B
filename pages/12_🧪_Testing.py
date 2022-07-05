@@ -246,3 +246,4 @@ if(test):
     
 if(test2):
     st.write(file)
+    st.image(file)
