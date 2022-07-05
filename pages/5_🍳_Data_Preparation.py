@@ -20,7 +20,7 @@ st.write("""
 col1, col2 = st.columns(2)
 
 with col1:
-    st.header("Gewünschte Daten")
+    st.subheader("Gewünschte Daten")
     st.markdown("""
             - Einsatzfahrzeuge
             - Verkehrsbilder
@@ -28,7 +28,7 @@ with col1:
            """)
 
 with col2:
-    st.header("Unerwünschte Daten")
+    st.subheader("Unerwünschte Daten")
     st.markdown("""
             - Tiere
             - Menschen
