@@ -225,7 +225,6 @@ def TestMethod():
     image_url = 'https://tensorflow.org/images/surf.jpg'
     image_extension = image_url[-4:]
     image_path = tf.keras.utils.get_file('image'+image_extension, origin=image_url)
-    st.write(image_path)
     
     result, attention_plot = evaluate(image_path)
     st.write('Predicted Caption:', ' '.join(result))
@@ -249,8 +248,8 @@ def TestMethod2():
     
     
     
-test = st.button('Test')   
-test2 = st.button('File Test')
+test = st.button('Testbild anzeigen lassen')   
+test2 = st.button('Eigenes Bild untertiteln')
 file = st.file_uploader('Bitte laden Sie ein Bild hoch', type= ['png', 'jpg'])
 if(test):
     TestMethod()
