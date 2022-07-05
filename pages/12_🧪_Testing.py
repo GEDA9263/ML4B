@@ -241,7 +241,7 @@ def TestMethod2():
      st.write(os.path.join("tempDir", file.name))   
      with open(os.path.join("tempDir", file.name),"wb") as f:
          f.write(file.getbuffer())
-     st.image('tempDir'.format(file.name))
+     st.image('tempDir/' + file.name)
     
     
     
