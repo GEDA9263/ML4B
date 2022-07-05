@@ -15,7 +15,8 @@ if(option == 'Rohbilder'):
    st.image("Trainingsbilder/Human/Humans.jpg", caption='a lot of people around and under a tent in a city', width=breite)        
 elif(option == 'Epoche 10'):
     st.image("Trainingsbilder/Pferde/Pferde_10_Epochen.jpg", width=breite)
-    st.image("Trainingsbilder/Elefanten/10 Epochen Elefant.png", width=breite)        
+    st.image("Trainingsbilder/Elefanten/10 Epochen Elefant.png", width=breite)
+    st.image("Trainingsbilder/Human/Human 10 Epochen.jpg", width=breite)        
 elif(option == 'Epoche 20'):
     st.image("Trainingsbilder/Pferde/Pferde_20_Epochen.jpg", width=breite)
     st.image("Trainingsbilder/Elefanten/20 Epochen Elefant.png",  width=breite)
