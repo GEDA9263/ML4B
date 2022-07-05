@@ -55,7 +55,7 @@ def make_tokenizer():
     new_tokenizer.set_weights(loaded_tokenizer['weights'])
     return new_tokenizer
 
-@st.cache(hash_funcs={tf.keras.utils.object_identity.ObjectIdentityDictionary: lambda _: None})
+@st.cache(hash_funcs={"keras.utils.object_identity.ObjectIdentityDictionary": lambda _: None})
 def makeDictionary():
     tokenizer = make_tokenizer()
 
