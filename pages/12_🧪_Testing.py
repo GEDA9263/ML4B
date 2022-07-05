@@ -258,3 +258,5 @@ if(test):
 if(test2):
     if(file != None):
         TestMethod2()
+    else:
+        st.write('Bitte laden sie vorher ein Bild hoch')
