@@ -234,14 +234,18 @@ def TestMethod():
   
 
 def TestMethod2():
-     if not os.path.exists(os.path.abspath('.') + '/tempDir'):
+    if not os.path.exists(os.path.abspath('.') + '/tempDir'):
         os.mkdir('tempDir')
-        
-     st.write(os.path.abspath('.'))
-     st.write(os.path.join("tempDir", file.name))   
-     with open(os.path.join("tempDir", file.name),"wb") as f:
+      
+    with open(os.path.join("tempDir", file.name),"wb") as f:
          f.write(file.getbuffer())
-     st.image('tempDir/' + file.name)
+            
+    st.image('tempDir/' + file.name)
+    
+    image_path = 'tempDir/' + file.name
+    result, attention_plot = evaluate(image_path)
+    st.write('Predicted Caption:', ' '.join(result))
+    plot_attention(image_path, result, attention_plot)
     
     
     
