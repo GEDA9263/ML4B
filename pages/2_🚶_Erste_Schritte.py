@@ -9,7 +9,7 @@ st.header("🚶 - 03.05.22 - Gruppenaufteilung")
 
 st.markdown(
          """
-       In der ersten Woche haben wir mit Streamlit eine kleine erste App gebaut und die Installation der erforderlichen Programme durchgeführt. Benötigte Programme waren zum Beispiel: 
+       In der ersten Woche haben wir uns in die erforderlichen Programme eingearbeitet. Benötigte Programme waren zum Beispiel: 
        - Anaconda
        - Jupyter Notebook/Lab
        - Streamlit
