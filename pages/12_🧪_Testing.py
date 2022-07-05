@@ -239,8 +239,7 @@ def TestMethod2():
     with open(os.path.join("tempDir", file.name),"wb") as f:
          f.write(file.getbuffer())
             
-    st.image('tempDir/' + file.name)
-    
+    st.image('tempDir/' + file.name) 
     image_path = 'tempDir/' + file.name
     result, attention_plot = evaluate(image_path)
     st.write('Predicted Caption:', ' '.join(result))
