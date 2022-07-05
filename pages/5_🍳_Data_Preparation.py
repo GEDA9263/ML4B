@@ -37,8 +37,9 @@ with col2:
 
 
 st.write("""
-        Zunächst haben wir den Datensatz eingeschränkt. Mit den Suchbegriffen „vehicle“, „emergency vehicle“ und „traffic“ etc. Schnell haben wir gemerkt, dass der Datensatz für unser Thema zu klein ist, um einen Algorithmus sinnvoll zu trainieren zu können. Außerdem hatten wir Schwierigkeiten sinnvolle Bilder zu finden, da beispielsweise viele Spielzeugautos mit in unserem Datensatz waren.
-        """)
+        Dazu haben wir den Datensatz mit den Suchbegriffen „vehicle“, „emergency vehicle“ und „traffic“ etc eingeschränkt. Schnell haben wir gemerkt, dass der Datensatz für unser Thema zu klein ist, um einen Algorithmus sinnvoll trainieren zu können. Außerdem hatten wir Schwierigkeiten sinnvolle Bilder zu finden, da beispielsweise viele Spielzeugautos mit in unserem Datensatz waren.
+       Hierzu ein Einblick in unsere Datensätze:
+       """)
 
 
 
