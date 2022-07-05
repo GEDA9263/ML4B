@@ -240,7 +240,7 @@ def TestMethod2():
     
 test = st.button('Test')   
 test2 = st.button('File Test')
-file = st.file_uploader('Bitte laden Sie ein Bild hoch', type= ['png', 'jpg'], on_change="")
+file = st.file_uploader('Bitte laden Sie ein Bild hoch', type= ['png', 'jpg'])
 if(test):
     TestMethod2()
     
