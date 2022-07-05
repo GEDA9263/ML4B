@@ -231,6 +231,13 @@ def TestMethod():
     plot_attention(image_path, result, attention_plot)
     
   
+
+def TestMethod2():
+    image=st.image('https://tensorflow.org/images/surf.jpg')
+    result, attention_plot = evaluate(image)
+    st.write('Predicted Caption:', ' '.join(result))
+    plot_attention(image_path, result, attention_plot)
+    
 test = st.button('Test')    
 if(test):
-    TestMethod()
+    TestMethod2()
