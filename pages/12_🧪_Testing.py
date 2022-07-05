@@ -19,6 +19,12 @@ st.set_page_config(
 st.header("🧪_Testing")
 st.write("Hier gibt es nun die Möglichkeit das trainierte Modell zu testen. Hierfür entweder das Testbild anzeigen lassen oder ein eigenes Bild hochladen")
 
+file = st.file_uploader('Bitte laden Sie ein Bild hoch', type= ['png', 'jpg'])
+
+test = st.button('Testbild anzeigen lassen')   
+test2 = st.button('Eigenes Bild untertiteln')
+
+
 def load_image(image_path):
     img = tf.io.read_file(image_path)
     img = tf.io.decode_jpeg(img, channels=3)
@@ -253,11 +259,7 @@ def TestMethod2():
     st.write('Predicted Caption:', ' '.join(result))
     plot_attention(image_path, result, attention_plot)
     
-    
-    
-test = st.button('Testbild anzeigen lassen')   
-test2 = st.button('Eigenes Bild untertiteln')
-file = st.file_uploader('Bitte laden Sie ein Bild hoch', type= ['png', 'jpg'])
+   
 
 if(test):
     TestMethod()
