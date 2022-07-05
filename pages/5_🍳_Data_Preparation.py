@@ -29,7 +29,7 @@ with col1:
 
 with col2:
     st.header("Unerwünschte Daten")
-     st.markdown("""
+    st.markdown("""
             - Tiere
             - Menschen
             - Häuser            
