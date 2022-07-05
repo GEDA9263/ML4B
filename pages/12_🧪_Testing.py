@@ -247,4 +247,4 @@ if(test):
     
 if(test2):
     name = file.name
-    Testmethod2(name)
+    TestMethod2(name)
