@@ -53,7 +53,7 @@ def make_dictionary():
     loaded_tokenizer = pickle.load(open("checkpoints/tokenizer_layer.pkl", "rb"))
     new_tokenizer = tf.keras.layers.TextVectorization.from_config(loaded_tokenizer['config'])
     new_tokenizer.set_weights(loaded_tokenizer['weights'])
-    return new tokenizer
+    return new_tokenizer
 
 tokenizer = make_dictionary()
 
