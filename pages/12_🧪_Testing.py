@@ -234,8 +234,8 @@ def TestMethod():
   
 
 def TestMethod2():
-    image = tf.keras.utils.get_file(file.name, origin=file)
-    result, attention_plot = evaluate(image)
+    
+    result, attention_plot = evaluate(file)
     st.write('Predicted Caption:', ' '.join(result))
     plot_attention(image_path, result, attention_plot)
     
