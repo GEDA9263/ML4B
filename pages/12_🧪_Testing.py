@@ -186,7 +186,7 @@ checkpoint_path = "./checkpoints"
 @st.cache()
 def makeManager():
     ckpt = tf.train.Checkpoint(encoder=CNN_Encoder(embedding_dim)
-                               decoder=RNN_Decoder(embedding_dim, units, tokenizer.vocabulary_size()) 
+                               decoder=RNN_Decoder(embedding_dim, units, tokenizer.vocabulary_size()), 
                                optimizer=tf.keras.optimizers.Adam())
     ckpt_manager = tf.train.CheckpointManager(ckpt, checkpoint_path, max_to_keep=2)
     return ckpt_manager, ckpt
