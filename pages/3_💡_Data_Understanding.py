@@ -19,6 +19,7 @@ st.markdown(
       Letztendlich haben wir uns auf Emergency Vehicles geeinigt.  
           
       Das LAION5B Datenset ist sehr groß, aber mit Hilfe eines Web Programms kann man Teile davon einfach filtern ✂️ Zudem liegt pro Bild bereits eine Bildunterschrift in verschiedenen Sprachen vor.
+      
       Das verwendete Programm:
       - (https://rom1504.github.io/clip-retrieval/?back=https%3A%2F%2Fknn5.laion.ai&index=laion5B&useMclip=false)
     """
