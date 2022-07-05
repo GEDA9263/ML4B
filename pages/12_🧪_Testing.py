@@ -231,6 +231,6 @@ def TestMethod():
     plot_attention(image_path, result, attention_plot)
     
   
-st.button('Test')    
-if(st.button):
+test = st.button('Test')    
+if(test):
     TestMethod()
