@@ -24,7 +24,7 @@ multiprocess==0.70.12.2
 numpy==1.22.3
 pandas==1.4.2
 Pillow==9.1.1
-protobuf==3.20.1
+protobuf==3.19.0
 pyarrow==7.0.0
 pydeck==0.7.1
 Pympler==1.0.1
