@@ -48,14 +48,19 @@ def make_features_extract_model():
 
 image_features_extract_model = make_features_extract_model()
 
-@st.cache(hash_funcs={tf.keras.utils.object_identity.ObjectIdentityDictionary: lambda _: None})
-def make_dictionary():
+@st.cache()
+def make_tokenizer():
     loaded_tokenizer = pickle.load(open("checkpoints/tokenizer_layer.pkl", "rb"))
     new_tokenizer = tf.keras.layers.TextVectorization.from_config(loaded_tokenizer['config'])
     new_tokenizer.set_weights(loaded_tokenizer['weights'])
     return new_tokenizer
 
-tokenizer = make_dictionary()
+@st.cache(hash_funcs={tf.keras.utils.object_identity.ObjectIdentityDictionary: lambda _: None})
+def makeDictionary():
+    tokenizer = make_tokenizer()
+
+makeDictionary()
+
 
 def wordIndex():
     return tf.keras.layers.StringLookup(
