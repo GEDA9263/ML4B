@@ -171,10 +171,6 @@ decoder = RNN_Decoder(embedding_dim, units, tokenizer.vocabulary_size())
 optimizer = tf.keras.optimizers.Adam()
 
 
-@st.cache(hash_funcs={"keras.utils.object_identity.ObjectIdentityDictionary": lambda _: None,
-                      "builtins.weakref": lambda _: None,
-                      "tensorflow.python.training.tracking.base.TrackableReference": lambda _: None,
-                      "tensorflow.python.framework.ops.EagerTensor": lambda _: None})
 def restoreCheckpoints():
     checkpoint_path = "./checkpoints"
     ckpt = tf.train.Checkpoint(encoder=encoder,
