@@ -17,7 +17,7 @@ st.set_page_config(
 )
 
 st.header("🧪 - Testing")
-st.write("Hier gibt es nun die Möglichkeit das trainierte Modell zu testen. Hierfür entweder das Testbild anzeigen lassen oder ein eigenes Bild hochladen")
+st.write("Hier gibt es nun die Möglichkeit ein trainiertes Modell zu testen. Hierfür entweder das Testbild anzeigen lassen, oder ein eigenes Bild hochladen")
 
 file = st.file_uploader('Bitte laden Sie ein Bild hoch', type= ['png', 'jpg'])
 
