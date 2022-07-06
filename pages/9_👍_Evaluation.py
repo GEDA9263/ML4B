@@ -6,9 +6,11 @@ st.set_page_config(
 )
 
 st.header("👍 - 15.06.22 - Evaluation")
-st.write("""Für die Evaluation haben wir ein paar Beispiele, um zu veranschaulichen, wie viel besser das Programm mit zunehmenden Training wird.""")
-st.write("""Zwischenzeitlich hatten wir noch mit ein paar Bugs zu kämpfen, zum Beispiel wurden uns immer die maximale Anzahl an Wörter in der Caption ausgegeben, anstatt eine Sinnvolle Caption. So ist zum Beispiel dieser Wörtersalat entstanden:    
-         """)
+st.markdown("""Zur Evaluation unserer Modelle haben wir einen Loss Plot erstellt, damit wir den Loss des Modells zum Zeitpunkt des Trainings dokumentieren und auswerten können.
+
+Zwischenzeitlich hatten wir mit Bugs zu kämpfen. Zum Beispiel wurden uns immer die maximale Anzahl an Wörtern, anstatt einer sinnvollen Anzahl, in der Caption ausgegeben. So ist zum Beispiel dieser Wörtersalat entstanden:    
+""")
+
 st.image("Trainingsbilder/brokencaption.jpg")
 
 st.write("Ab und an war jedoch auch eine ziemlich lustige Vorhersage dabei:")
