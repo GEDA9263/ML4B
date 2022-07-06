@@ -6,5 +6,7 @@ st.set_page_config(
 )
 
 st.header("22.06.22 - Deployment")
-st.write("""Die letzten Tage vor der Abgabe haben wir nun gebraucht, um die Streamlit app aufzuhübschen.
-     """)
+st.markdown("""Die letzten Tage vor der Abgabe haben wir gebraucht, um die Streamlit app aufzuhübschen. Außerdem haben wir unsere Streamlitapp von Singlepage auf Multipages umgestellt. Dies ermöglicht eine einfachere Navigation und eine bessere Übersichtlichkeit.
+   
+   
+   """)
