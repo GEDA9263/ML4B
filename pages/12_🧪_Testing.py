@@ -277,6 +277,6 @@ if(test2):
 if(ballons):
     i = 0;
     while(i < 5):
-        st.balloons()
-        st.balloons()
+        st.snow()
+        st.snow()
         i += 1
