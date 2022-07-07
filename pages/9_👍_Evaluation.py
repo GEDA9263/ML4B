@@ -8,7 +8,7 @@ st.set_page_config(
 st.header("👍 - 15.06.22 - Evaluation")
 st.markdown("""Zur Evaluation unserer Modelle haben wir einen Loss Plot erstellt, damit wir den Loss des Modells zum Zeitpunkt des Trainings dokumentieren und auswerten können.
             """)
-breite = 250
+breite = 200
 col1, col2, col3 = st.columns(3)
 with col1:
     st.image("Trainingsbilder/Pferde/Pferde_Loss_Plot.jpg", caption= 'Verlustgrafik der Pferde', width=breite)
