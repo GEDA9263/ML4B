@@ -274,3 +274,5 @@ if(test2):
         TestMethod2()
     else:
         st.write('Bitte laden sie vorher ein Bild hoch')
+if(ballons):
+    st.balloons()
