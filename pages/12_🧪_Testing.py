@@ -208,7 +208,7 @@ if ckpt_manager.latest_checkpoint:
 
 
 def evaluate(image):
-    max_length = 10
+    max_length = 15
     attention_plot = np.zeros((max_length, attention_features_shape))
 
     hidden = decoder.reset_state(batch_size=1)
