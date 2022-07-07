@@ -278,5 +278,4 @@ if(ballons):
     i = 0;
     while(i < 5):
         st.balloons()
-        st.balloons()
         i += 1
