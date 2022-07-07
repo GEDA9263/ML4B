@@ -70,9 +70,9 @@ def aggrid_interactive_table(df: pd.DataFrame):
 
 subset = ""
 if (option == 'Verkehr'):
-        subset = 'trafficSubset.json'
+        subset = 'Subsets/trafficSubset.json'
 elif(option == 'Fahrzeuge'):
-        subset = 'clipsubset.json'
+        subset = 'Subsets/clipsubset.json'
 
         
 if(option != ''):
@@ -80,7 +80,7 @@ if(option != ''):
         selection = aggrid_interactive_table(df)
 
         if len(selection["selected_rows"]) > 0:
-                st.write("Hier ist das ausgewählte Bild! ")
+                st.write("Das ausgewählte Bild: ")
                 url = selection["selected_rows"][0]["url"]
                 id = selection["selected_rows"][0]["id"]
                 filename = str(id) + '.jpg'
