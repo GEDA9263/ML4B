@@ -19,7 +19,7 @@ st.markdown("""
             Leider funktionieren die entsprechenden Python Packages nicht sonderlich gut mit Streamlit, weswegen man alle 5-6 Bilder den Cache einmal clearen sollte
             um einem Absturz der App vorzubeugen. 
             
-            Außerdem funktoniert das untertiteln der Bilder signifikant besser, wenn nicht viele Sachen auf dem Bild zu sehen sind. Im Zweifelsfall kann es zu sehr langen und 
+            Außerdem funktoniert das Untertiteln der Bilder signifikant besser, wenn nicht viele Sachen auf dem Bild zu sehen sind. Im Zweifelsfall kann es zu sehr langen und 
             ungenauen Captions kommen, da das Modell die schiere Menge an Features schlecht verarbeiten kann. 
             
             Beispiele für gute Bilder sind im Reiter Feedback zu sehen.
