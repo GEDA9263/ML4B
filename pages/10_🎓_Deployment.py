@@ -17,7 +17,7 @@ st.markdown("""
             
             Im Reiter Testing kann man ein eigenes Bild einem Modell, welches auf 200.000 Datenpunkten trainiert wurde übergeben und sich eine Bildunterschrift generieren lassen.
             Leider funktionieren die entsprechenden Python Packages nicht sonderlich gut mit Streamlit, weswegen man alle 5-6 Bilder den Cache einmal clearen sollte
-            um einen Absturz der App vorzubeugen. 
+            um einem Absturz der App vorzubeugen. 
             
             Außerdem funktoniert das untertiteln der Bilder signifikant besser, wenn nicht viele Sachen auf dem Bild zu sehen sind. Im Zweifelsfall kann es zu sehr langen und 
             ungenauen Captions kommen, da das Modell die schiere Menge an Features schlecht verarbeiten kann. 
