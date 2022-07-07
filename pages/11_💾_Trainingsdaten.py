@@ -6,7 +6,7 @@ st.set_page_config(
 )
 
 st.title("💾 - Trainingsbilder")
-option = st.sidebar.selectbox('Bitte wählen sie die Epoche aus zu der Sie die Daten sehen möchten', ('Rohbilder','Epoche 10', 'Epoche 20', 'Epoche 30', 'Epoche 40', 'Epoche 50', 'Epoche 60', 'Epoche 70', 'Verlustgrafik'))
+option = st.sidebar.selectbox('Bitte wählen sie die Epoche aus zu der Sie die Daten sehen möchten', ('Rohbilder','Epoche 10', 'Epoche 20', 'Epoche 30', 'Epoche 40', 'Epoche 50', 'Epoche 60', 'Epoche 70'))
 breite = 720
 
 if(option == 'Rohbilder'):
@@ -40,7 +40,3 @@ elif(option == 'Epoche 60'):
 elif(option == 'Epoche 70'):
     st.image("Trainingsbilder/Elefanten/70 Epochen Elefant.png",  width=breite)
     st.image("Trainingsbilder/Human/Human 70 Epochen.jpg", width=breite)        
-elif(option == 'Verlustgrafik'):
-     st.image("Trainingsbilder/Pferde/Pferde_Loss_Plot.jpg", caption= 'Verlustgrafik der Pferde', width=int((breite/2)))
-     st.image("Trainingsbilder/Elefanten/Verlustdiagramm 70 Epochen.png", caption = 'Verlustgrafik der Elefanten', width=int((breite/2)))
-     st.image("Trainingsbilder/Human/Verlust Menschen.jpg", caption = 'Verlustgrafik der Ansammlung', width=int((breite/2)))
