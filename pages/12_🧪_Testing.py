@@ -169,20 +169,37 @@ class RNN_Decoder(tf.keras.Model):
   def reset_state(self, batch_size):
     return tf.zeros((batch_size, self.units))
 
-encoder = CNN_Encoder(embedding_dim)
-decoder = RNN_Decoder(embedding_dim, units, tokenizer.vocabulary_size()) 
-optimizer = tf.keras.optimizers.Adam()
+checkpoint_path = "./checkpoints"
 
-def restoreCheckpoints():
-    checkpoint_path = "./checkpoints"
+@st.cache()
+def makeModel():
+    encoder = CNN_Encoder(embedding_dim)
+    decoder = RNN_Decoder(embedding_dim, units, tokenizer.vocabulary_size()) 
+    optimizer = tf.keras.optimizers.Adam()
+    return encoder, decoder, optimizer
+
+encoder, decoder, optimizer = makeModel()
+
+@st.cache()
+def makeCKPT():
     ckpt = tf.train.Checkpoint(encoder=encoder,
                            decoder=decoder,
                            optimizer=optimizer)
-    ckpt_manager = tf.train.CheckpointManager(ckpt, checkpoint_path, max_to_keep=2)
-    if ckpt_manager.latest_checkpoint:
-      ckpt.restore(ckpt_manager.latest_checkpoint)
+    return ckpt
 
-restoreCheckpoints()
+ckpt = makeCKPT()
+
+@st.cache()
+def makeManager():
+    ckpt_manager = tf.train.CheckpointManager(ckpt, checkpoint_path, max_to_keep=2)
+    return ckpt_manager
+   
+
+ckpt_manager = makeManager()
+    
+if ckpt_manager.latest_checkpoint:
+     ckpt.restore(ckpt_manager.latest_checkpoint)
+
 
 def evaluate(image):
     max_length = 50
