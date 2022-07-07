@@ -22,6 +22,7 @@ st.write("Hier gibt es nun die Möglichkeit ein trainiertes Modell zu testen. Hi
 file = st.file_uploader('Bitte laden Sie ein Bild hoch', type= ['png', 'jpg'])
 
 test = st.sidebar.button('Testbild anzeigen lassen')   
+ballons = st.sidebar.button("Fin")
 test2 = st.button('Eigenes Bild untertiteln')
 
 
