@@ -6,7 +6,8 @@ st.set_page_config(
 )
 
 st.header("22.06.22 - Deployment")
-st.markdown("""Die letzten Tage vor der Abgabe haben wir gebraucht, um die Streamlit app aufzuhübschen. Einige der Änderungen waren z.B.:
+st.markdown("""
+            Die letzten Tage vor der Abgabe haben wir gebraucht, um die Streamlit app aufzuhübschen. Einige der Änderungen waren z.B.:
 
             - Umstellung der App von Single auf Multipage 
             - Einbinden der selbst erzeugten Datensätze und Zugriff auf die Bilder
