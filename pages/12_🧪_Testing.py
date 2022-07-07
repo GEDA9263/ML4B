@@ -276,3 +276,4 @@ if(test2):
         st.write('Bitte laden sie vorher ein Bild hoch')
 if(ballons):
     st.balloons()
+    st.balloons()
