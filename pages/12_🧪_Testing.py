@@ -275,5 +275,8 @@ if(test2):
     else:
         st.write('Bitte laden sie vorher ein Bild hoch')
 if(ballons):
-    st.balloons()
-    st.balloons()
+    i = 0;
+    while(i < 5):
+        st.balloons()
+        st.balloons()
+        i++
