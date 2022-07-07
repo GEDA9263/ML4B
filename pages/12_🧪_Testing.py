@@ -279,4 +279,4 @@ if(ballons):
     while(i < 5):
         st.balloons()
         st.balloons()
-        i++
+        i += 1
