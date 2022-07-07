@@ -5,7 +5,7 @@ st.set_page_config(
     page_icon="🎓",
 )
 
-st.header("22.06.22 - Deployment")
+st.header("🎓 - 22.06.22 - Deployment")
 st.markdown("""
             Die letzten Tage vor der Abgabe haben wir gebraucht, um die Streamlit app aufzuhübschen. Einige der Änderungen waren z.B.:
 
