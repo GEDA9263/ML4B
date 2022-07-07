@@ -54,7 +54,7 @@ def aggrid_interactive_table(df: pd.DataFrame):
     return selection
 
 
-df = pd.read_json('DogSubset.json')
+df = pd.read_json('Subsets/DogSubset.json')
 
 selection = aggrid_interactive_table(df)
 
