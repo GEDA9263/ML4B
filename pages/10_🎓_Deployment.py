@@ -20,5 +20,7 @@ st.markdown("""
             um einen Absturz der App vorzubeugen. 
             
             Außerdem funktoniert das untertiteln der Bilder signifikant besser, wenn nicht viele Sachen auf dem Bild zu sehen sind. Im Zweifelsfall kann es zu sehr langen und 
-            ungenauen Captions kommen, da das Modell die schiere Menge an Features schlecht verarbeiten kann. Beispiele für gute Bilder sind im Reiter Feedback zu sehen.
+            ungenauen Captions kommen, da das Modell die schiere Menge an Features schlecht verarbeiten kann. 
+            
+            Beispiele für gute Bilder sind im Reiter Feedback zu sehen.
             """)
