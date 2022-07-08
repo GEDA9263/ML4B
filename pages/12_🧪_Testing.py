@@ -195,7 +195,8 @@ ckpt = makeCKPT()
 
 @st.cache(allow_output_mutation=True, ttl = 1800, hash_funcs={"keras.utils.object_identity.ObjectIdentityDictionary": lambda _: None,
                                                   "builtins.weakref": lambda _: None,
-                                                  "tensorflow.python.training.tracking.base.TrackableReference": lambda _: None,  })
+                                                  "tensorflow.python.training.tracking.base.TrackableReference": lambda _: None,
+                                                   "tensorflow.python.training.tracking.base.CheckpointPosition": lambda _: None })
 def makeManager():
     ckpt_manager = tf.train.CheckpointManager(ckpt, checkpoint_path, max_to_keep=2)
     return ckpt_manager
