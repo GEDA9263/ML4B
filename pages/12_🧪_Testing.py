@@ -260,7 +260,7 @@ def TestMethod():
     
     st.image(image_url)
     result, attention_plot = evaluate(image_path)
-    st.write('Predicted Caption:', ' '.join(result))
+    st.write('Vorhergesagte Bildunterschrift:', ' '.join(result))
     plot_attention(image_path, result, attention_plot)
     
   
