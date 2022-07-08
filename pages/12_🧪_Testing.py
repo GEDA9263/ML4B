@@ -183,7 +183,8 @@ encoder, decoder, optimizer = makeModel()
 
 @st.cache(allow_output_mutation=True, ttl = 1800, hash_funcs={"keras.utils.object_identity.ObjectIdentityDictionary": lambda _: None,
                                                   "builtins.weakref": lambda _: None,
-                                                  "tensorflow.python.training.tracking.base.TrackableReference": lambda _: None,  })
+                                                  "tensorflow.python.training.tracking.base.TrackableReference": lambda _: None,
+                                                   "tensorflow.python.training.tracking.base.CheckpointPosition": lambda _: None })
 def makeCKPT():
     ckpt = tf.train.Checkpoint(encoder=encoder,
                            decoder=decoder,
