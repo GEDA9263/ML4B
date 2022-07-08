@@ -60,13 +60,15 @@ def make_tokenizer():
 
 tokenizer = make_tokenizer()
 
-@st.cache()
+@st.cache(hash_funcs={"keras.utils.object_identity.ObjectIdentityDictionary": lambda _: None,
+                      "builtins.weakref": lambda _: None})
 def wordIndex():
     return tf.keras.layers.StringLookup(
                                         mask_token="",
                                         vocabulary=tokenizer.get_vocabulary())
 
-@st.cache()
+@st.cache(hash_funcs={"keras.utils.object_identity.ObjectIdentityDictionary": lambda _: None,
+                      "builtins.weakref": lambda _: None})
 def indexWord():
     return tf.keras.layers.StringLookup(
                                         mask_token="",
